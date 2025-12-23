@@ -2,6 +2,9 @@ import torch
 from fl_utils import load_vocab, build_label_map, TextClassifier, fedavg
 from fl_client import train_client
 
+ # Central server coordinating federated learning
+
+
 def main(rounds=5):
     vocab = load_vocab()
     label_to_id, _ = build_label_map()
@@ -10,6 +13,13 @@ def main(rounds=5):
     torch.save(global_model.state_dict(), "global_round0.pt")
 
     global_path = "global_round0.pt"
+
+
+# Start federated learning rounds:
+# Each round, send the global model to each hospital (client),
+# have them train locally, then average their weights to form a new global model.
+# Repeat for the specified number of rounds.
+# Finally, save the final global model.
 
     for r in range(1, rounds + 1):
         print(f"\n🌍 Federated Round {r}")

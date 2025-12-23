@@ -15,7 +15,7 @@ def tokenize(text):
 def load_vocab():
     return json.loads(Path("vocab.json").read_text())
 
-def build_label_map():
+def build_label_map(): # disease code to ID mapping (the model can understand!)
     labels = set()
     for i in [1, 2, 3]:
         df = pd.read_csv(DATA_DIR / f"hospital{i}.csv")
@@ -62,6 +62,7 @@ class TextClassifier(torch.nn.Module):
         return self.fc(pooled)
 
 def fedavg(states, weights):
+    #TAKE ALL THE MODEL WEIGHTS FROM DIFFERENT HOSPITALS AND AVERAGE THEM
     avg = {}
     for k in states[0]:
         avg[k] = sum(w * s[k] for w, s in zip(weights, states))

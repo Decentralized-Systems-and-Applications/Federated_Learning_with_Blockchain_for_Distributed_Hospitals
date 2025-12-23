@@ -7,6 +7,8 @@ from fl_utils import (
     SymptomsDataset,
     TextClassifier,
 )
+## Training each hospital. 
+# hospital sends updated model weights to the server
 
 def train_client(hospital_id, global_model_path, out_path):
     device = "cuda" if torch.cuda.is_available() else "cpu"
