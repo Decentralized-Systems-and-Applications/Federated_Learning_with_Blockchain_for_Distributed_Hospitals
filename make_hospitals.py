@@ -18,9 +18,9 @@ h1 = df.iloc[: n//3]
 h2 = df.iloc[n//3 : 2*n//3]
 h3 = df.iloc[2*n//3 :]
 
-h1.to_csv("hospital1.csv", index=False)
-h2.to_csv("hospital2.csv", index=False)
-h3.to_csv("hospital3.csv", index=False)
+h1.to_csv("SeperatedDataSets/hospital1.csv", index=False)
+h2.to_csv("SeperatedDataSets/hospital2.csv", index=False)
+h3.to_csv("SeperatedDataSets/hospital3.csv", index=False)
 
 print("✅ Created hospital datasets:")
 print("hospital1.csv:", len(h1))
