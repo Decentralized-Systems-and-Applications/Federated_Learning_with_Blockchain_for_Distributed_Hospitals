@@ -15,7 +15,7 @@ def train_client(hospital_id, global_model_path, out_path):
     label_to_id, _ = build_label_map()
 
     dataset = SymptomsDataset(
-        f"../SeparatedDataSets/hospital{hospital_id}.csv",
+        f"../SeperatedDataSets/hospital{hospital_id}.csv",
         vocab,
         label_to_id
     )

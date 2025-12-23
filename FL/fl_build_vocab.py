@@ -4,7 +4,7 @@ import pandas as pd
 from pathlib import Path
 from collections import Counter
 
-DATA_DIR = Path("..") / "SeparatedDataSets"
+DATA_DIR = Path("..") / "SeperatedDataSets"
 OUT_PATH = Path("vocab.json")
 
 def tokenize(text):
