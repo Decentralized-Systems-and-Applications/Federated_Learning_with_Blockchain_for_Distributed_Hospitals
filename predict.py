@@ -1,8 +1,8 @@
 import joblib
 import pandas as pd
 
-# Load model
-model = joblib.load("local_hospital_model.joblib")
+# Load model (Hospital 1)
+model = joblib.load("hospital1_model.joblib")
 
 # Load mapping "database"
 map_df = pd.read_csv("disease_mapping.csv")
@@ -35,4 +35,3 @@ for symptoms in tests:
     print("Contagious:", info.get("Contagious", "Unknown"))
     print("Chronic:", info.get("Chronic", "Unknown"))
     print("Treatments:", info.get("Treatments", "Unknown"))
-
