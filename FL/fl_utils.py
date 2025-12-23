@@ -5,7 +5,7 @@ import pandas as pd
 from torch.utils.data import Dataset
 from pathlib import Path
 
-DATA_DIR = Path("..") / "SeparatedDataSets"
+DATA_DIR = Path("..") / "SeperatedDataSets"
 
 def tokenize(text):
     text = text.lower()
