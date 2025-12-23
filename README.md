@@ -5,4 +5,4 @@ The model predicts only the disease code, while all additional medical informati
 To prepare for federated learning, the dataset was split into three simulated hospital datasets.
 
 This setup establishes a working foundation for the next phase: distributed federated training and blockchain-based model update tracking.
-NEXT STEP IS : global prediction IS DONE, the next milestone is IPFS + Blockchain !
+NEXT STEP IS : global prediction is in progress, the next milestone is IPFS + Blockchain !
