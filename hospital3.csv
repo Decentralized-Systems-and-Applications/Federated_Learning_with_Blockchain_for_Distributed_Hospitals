@@ -1,0 +1,136 @@
+Symptoms,Disease_Code
+"Gradual vision loss, peripheral vision impairment, eye pain or discomfort, halos around lights",D273
+"Sunburn-like rash, redness, itching",D221
+"Fragile bones, loss of height over time, back pain, fractures",D096
+"Swelling, pain, dry mouth, bad taste",D052
+"Increased energy and alertness, decreased appetite, rapid heartbeat",D239
+"Fever, fatigue, body aches, heart and digestive problems",D298
+"Pain or tenderness on the outer side of the elbow, weak grip strength, difficulty with forearm movements",D377
+"Fatigue, shortness of breath, heart palpitations",D179
+"Severe neck pain, swelling, tenderness, difficulty moving or turning the head, numbness or weakness in the arms or legs",D042
+"Painless lump or swelling, Facial changes",D309
+"Fatigue, weakness, weight loss, low blood pressure, abdominal pain",D206
+"Abdominal pain, vomiting blood, bloody or black stools",D252
+"Fatigue, weakness, pale skin",D329
+"Avoidance or restriction of certain foods or entire food groups, significant weight loss or failure to gain weight",D005
+"Small lump or swelling in the vaginal wall, discomfort or pain during intercourse",D254
+"Itchy, red rash caused by contact with irritants or allergens",D355
+"Nausea, vomiting, diarrhea, abdominal pain or cramps, fever",D101
+"Sore throat, fever, painful sores or blisters in the mouth and throat, difficulty swallowing, loss of appetite",D226
+"Vision loss or blurry vision, eye pain with eye movement, color vision impairment, flashing lights or floaters",D343
+"Cough, shortness of breath, wheezing, chest pain, fever, night sweats, fatigue, weight loss, elevated eosinophil count in the blood or sputum",D213
+"Hemangioblastomas (tumors in the brain, spinal cord, or other organs), retinal angiomas (abnormal blood vessel growth in the retina), renal cell carcinomas (kidney tumors), pheochromocytomas (adrenal gland tumors), pancreatic cysts/tumors, other tumors or cysts",D172
+"Neck pain, stiffness, and abnormal head positioning",D099
+"Headaches, nausea, seizures, changes in coordination or balance",D290
+"Itchy, red, inflamed skin, rash",D215
+"Eye pain, blurred vision, sensitivity to light",D062
+"Ear pain, hearing loss, ear drainage, dizziness or vertigo, tinnitus",D048
+"Palpitations, Sweating, Trembling, Shortness of breath, Fear of losing control, Dizziness",D033
+"Muscle weakness, pain, inflammation",D265
+"Redness, itching, watery discharge, swollen eyelids",D200
+"Severe pain, visible deformity, swelling, inability to move the elbow, numbness or tingling in the hand/arm",D353
+Excessive hair growth in women,D028
+Recurrent episodes of binge eating followed by purging behaviors,D311
+"Joint pain, stiffness, swelling, fatigue, loss of appetite",D230
+"Severe upper abdominal pain, nausea, vomiting, fever, rapid pulse, swollen and tender abdomen, jaundice",D258
+"Sudden numbness or weakness of the face, arm, or leg (typically on one side of the body), confusion, trouble speaking or understanding, severe headache",D286
+"Flank pain, urinary frequency, swelling in the abdomen",D163
+"Sensation of a foreign object stuck in the throat, difficulty swallowing or speaking",D375
+"Confusion, forgetfulness, personality changes, tremors",D139
+"Gradual loss of peripheral vision, tunnel vision",D063
+"Impaired memory and cognition, altered judgment, anxiety",D136
+"Sore throat, difficulty swallowing, swollen lymph nodes",D129
+"Eye redness, pain or discomfort, blurred or decreased vision, increased sensitivity to light",D009
+"Eye pain, redness, foreign body sensation, sensitivity to light",D065
+"Painless swelling, usually on the lower lip or floor of the mouth",D085
+"Severe and chronic pain, often in the limbs, with associated swelling, changes in skin color or temperature, abnormal sweating, limited range of motion",D015
+"Vertigo, hearing loss, tinnitus, ear fullness",D157
+"Joint pain, stiffness, swelling",D041
+"Heel pain, tenderness, difficulty walking",D362
+"Fatigue, swollen and bleeding gums, joint pain",D321
+"Cough, fever, chest pain, difficulty breathing",D216
+"High levels of cholesterol in the blood, fatty deposits (xanthomas) on the skin or tendons, chest pain or angina, heart attacks, strokes",D277
+"Severe and persistent pain, changes in skin color or temperature, swelling, stiffness",D100
+"Severe swelling of the floor of the mouth, fever, difficulty swallowing, drooling",D235
+"Blurred or distorted vision, eye strain, headaches,uneven curvature of cornea",D207
+"Eye pain, swelling, redness, vision changes",D212
+Sudden onset of neurological symptoms that resolve within 24 hours,D292
+"Drowsiness, confusion, slowed breathing",D361
+"Lower back pain, leg pain, numbness or tingling",D187
+"Fever, headache, body aches, rash",D386
+"headache, nausea, sensitivity to light, visual disturbances",D203
+"Fatigue, pale skin, frequent infections, easy bleeding or bruising",D299
+"Nausea, vomiting, early satiety, bloating, abdominal pain, poor appetite",D267
+"Easy bruising, prolonged bleeding after injury or surgery, excessive bleeding from minor cuts or abrasions, frequent nosebleeds, heavy menstrual bleeding",D201
+"Pelvic pain, painful periods, infertility",D162
+"Abdominal pain or discomfort, difficulty swallowing, choking or gagging, drooling, nausea or vomiting, loss of appetite, chest pain or pressure, respiratory distress, coughing or wheezing, gastrointestinal bleeding, bowel obstruction, perforation of the digestive tract",D044
+"Chronic diarrhea, weight loss, abdominal pain or bloating, nutrient deficiencies (vitamins, minerals), fatigue, failure to thrive",D217
+"Severe sore throat, difficulty swallowing, fever, swollen tonsils, voice changes, neck pain or stiffness",D190
+"Neck or back pain, stiffness, limited range of motion, numbness or weakness in the extremities",D304
+"Vaginal bleeding, painless bleeding in the third trimester",D257
+"Lump, swelling, Difficulty, pain when swallowing and speaking, Facial weakness, Facial paralysis",D106
+Repeated regurgitation and re-chewing of food,D054
+"Abdominal pain, bleeding, organ dysfunction",D002
+"Joint pain, swelling, stiffness, limited range of motion, fever, rash",D050
+"Difficulty or poor urinary stream, urinary tract infections, urinary frequency or urgency, abdominal distension, poor weight gain",D081
+"Night blindness, dry eyes, dry or rough skin, poor wound healing, weakened immune system",D205
+"Slurred speech, impaired coordination, confusion",D035
+Itching and visible presence of lice or nits (eggs) in the hair,D261
+"Dry, flaky skin with itching",D092
+"Abnormal vaginal bleeding outside of the menstrual period, unpredictable bleeding episodes, bleeding after sexual intercourse, bleeding after menopause, spotting or light bleeding between periods, prolonged or heavy bleeding",D333
+Difficulty swallowing,D053
+Varies depending on the underlying cause,D339
+"Persistent hunger, Weight loss, Dehydration, Visible peristalsis, Palpable mass, Fussiness",D262
+"Sudden, intense urge to urinate followed by involuntary urine leakage",D240
+"Red, swollen, itchy bumps",D014
+"Hearing loss (gradual and progressive), tinnitus (ringing in the ears), dizziness or balance problems",D310
+"Lower back pain, discomfort in the pelvic area",D089
+"Extreme fatigue, cognitive difficulties, unrefreshing sleep",D271
+"Shortness of breath, wheezing, chronic cough, chest tightness, fatigue, weight loss",D167
+"Severe abdominal or back pain, blood in urine, frequent urination, pain during urination",D322
+"Swelling, pain, tenderness, difficulty eating",D389
+"Headache, nausea, vomiting, cognitive or developmental problems, enlarged head in infants",D135
+"Red, scaly patches on the skin, itching",D301
+"Benign tumors in various organs, seizures, developmental delays, skin abnormalities",D379
+"Redness, itching, rash, blistering",D221
+"Fatigue, abdominal pain, joint pain, memory loss or cognitive difficulties, developmental delays (in children), anemia",D242
+"Persistent cough with yellow or green mucus, chest congestion, fatigue",D055
+"Excessive bleeding and bruising, prolonged bleeding from wounds or after dental work or surgery, spontaneous bleeding in joints or muscles",D356
+"Abnormal positioning of the urethral opening on the underside of the penis, penile curvature, spraying of urine, difficulty in urination",D051
+"Increased appetite, relaxation, altered perception of time, impaired memory and concentration, bloodshot eyes, anxiety or paranoia (in some individuals), withdrawal symptoms (such as irritability, insomnia) when attempting to stop or reduce cannabis use, continued use despite negative consequences (such as relationship problems, job difficulties)",D175
+"Low blood sugar (hypoglycemia) symptoms (e.g., confusion, sweating)",D189
+"Numbness or tingling in fingers or around the mouth, muscle cramps",D393
+"Fatigue, Increased hunger, Slow healing of wounds",D067
+"Inability to conceive after one year of unprotected intercourse, irregular or absent menstrual cycles, hormonal imbalances, age-related factors, other",D170
+"Extreme weight loss, fear of gaining weight, distorted body image",D059
+"Abdominal pain, high blood pressure, kidney cysts",D049
+"Fatigue, nausea, excessive thirst, kidney stones",D338
+"Skipped or extra heartbeats, palpitations, lightheadedness",D234
+"Joint pain, fatigue, skin rashes",D250
+"cough, sore throat, runny nose, sneezing",D022
+"Challenges with social interaction, communication difficulties, restricted interests or repetitive behaviors",D308
+"Abnormal vaginal bleeding, pelvic pain or discomfort, changes in bowel or bladder habits",D161
+"Raised, itchy welts on the skin",D274
+"Skin sores, fever, weight loss, enlarged spleen or liver",D191
+"Swollen lymph nodes, unexplained weight loss, fatigue",D291
+"Widespread musculoskeletal pain, fatigue, sleep disturbances, cognitive difficulties (fibro fog), mood changes",D337
+"Obsessive focus on ""clean"" eating, healthy food choices",D255
+"Fatigue, weakness, pale skin, shortness of breath",D303
+"Fatigue, abdominal swelling or pain, enlarged liver, elevated liver enzymes, insulin resistance",D150
+"Dizziness, low blood pressure, slow heart rate, nausea, vomiting",D131
+"Decreased urine output, swelling in the legs and ankles, and signs of fluid overload, Severe kidney damage",D152
+"Frequent urination, Increased thirst, Weight loss",D352
+"Intense burning pain, swelling, changes in skin temperature",D100
+"Persistent, painful erection",D363
+"Joint swelling, pain, warmth, limited range of motion",D088
+"Floaters (spots or cobweb-like shapes in vision), flashes of light, curtain-like shadow over vision, sudden vision loss",D324
+"Nausea, vomiting, diarrhea, neurological symptoms",D214
+"Fatigue, abdominal pain or swelling, jaundice, neurological symptoms (tremors, difficulty speaking or walking)",D122
+"Chronic back pain and stiffness, especially in the morning or after periods of inactivity, limited range of motion in the spine, fatigue, inflammation and pain in other joints (such as hips, shoulders, knees), discomfort or pain in the neck, difficulty maintaining proper posture, tenderness or swelling in affected areas, tingling or numbness in extremities in severe cases",D395
+"Shooting or burning pain, tingling or numbness",D021
+"Persistent cough with thick mucus, recurrent lung infections, poor growth or weight gain, salty-tasting skin",D188
+"Sore throat, fever, rash (red, sandpaper-like), swollen glands",D072
+"Tingling, numbness, and pain in the hand and fingers",D107
+"Painful ulcers or sores on the genital area, swollen lymph nodes in the groin",D268
+"Irregular periods, excessive hair growth, acne, weight gain, ovarian cysts",D342
+"Fatigue, jaundice, abdominal swelling (ascites), easy bruising and bleeding, confusion, loss of appetite, weight loss",D103

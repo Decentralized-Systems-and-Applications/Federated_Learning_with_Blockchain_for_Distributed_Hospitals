@@ -1,0 +1,396 @@
+Disease_Code,Name,Treatments,Contagious,Chronic
+D001,Gestational Cholestasis,,False,False
+D002,Injury to Internal Organ,"Immediate medical attention, diagnostic tests, surgery (in some cases)",False,False
+D003,Scabies,"Prescription medications (topical or oral scabicides), washing clothes and bedding in hot water, vacuuming and cleaning home",False,True
+D004,Congenital Glaucoma,"Surgery (e.g., trabeculotomy, goniotomy) to create a new drainage pathway, medications to reduce intraocular pressure",False,True
+D005,Avoidant/Restrictive Food Intake Disorder (ARFID),"Nutritional counseling, psychotherapy (such as cognitive-behavioral therapy or family-based therapy), medical monitoring, exposure therapy, occupational therapy",False,True
+D006,Subdural hemorrhage,"Immediate medical attention, close monitoring of vital signs and neurological status, diagnostic imaging (such as CT or MRI scan), potential surgical intervention (such as craniotomy or burr hole evacuation), medication to manage symptoms",False,True
+D007,Poisoning due to Antidepressants,"Seek immediate medical assistance or contact a poison control center, activated charcoal (if indicated), supportive care (maintaining vital signs, airway management), gastric lavage (in certain cases), administration of antidotes (if available and appropriate), monitoring and management of complications",False,True
+D008,Mittelschmerz,"Pain management (over-the-counter pain relievers, heat therapy), hormonal birth control (if severe or recurrent)",False,True
+D009,Cornea Infection,"Antibiotic or antifungal eye drops, oral medications, supportive care, possible corneal transplant (in severe cases)",False,True
+D010,Myopia,"Eyeglasses, contact lenses, refractive surgery (LASIK), orthokeratology (for some cases)",False,False
+D011,Abscess of the Lung,"Antibiotics, drainage or surgical removal of the abscess, supportive care, management of underlying lung conditions",True,False
+D012,Congenital rubella,"Supportive care to manage symptoms and complications, early intervention services for developmental delays, educational support, vision and hearing interventions, specialized medical care as needed",False,False
+D013,Intertrigo,"Keeping the affected area clean and dry, applying topical antifungal or antibacterial creams, using barrier creams",False,False
+D014,Insect Bites,"Topical corticosteroids, oral antihistamines, cold compresses",False,False
+D015,Complex Regional Pain Syndrome,"Physical therapy (including exercises, stretching, and mirror therapy), pain management techniques (such as medications, nerve blocks, or spinal cord stimulation), sympathetic nerve blocks, psychological support (such as cognitive-behavioral therapy or counseling), occupational therapy, graded motor imagery, transcutaneous electrical nerve stimulation (TENS), patient education and self-management techniques",False,True
+D016,Anxiety,"Therapy (cognitive-behavioral therapy, psychotherapy), medications (antidepressants, anti-anxiety drugs)",False,True
+D017,Gastroesophageal Reflux Disease (GERD),"Lifestyle changes, medications (antacids, proton pump inhibitors)",False,True
+D018,Crushing Injury,"Emergency medical attention, immobilization, pain management, surgery (to repair or reconstruct affected tissues), rehabilitation (physical therapy, occupational therapy)",False,True
+D019,Cellulitis,"Antibiotics, Warm compresses, immobilization, rest, Pain management",False,False
+D020,Anal Fissure,"Stool softeners, fiber supplements, topical ointments, surgical procedures (in severe cases)",False,False
+D021,Neuropathic Pain,"Medications (such as antidepressants, anticonvulsants, topical treatments), nerve blocks, spinal cord stimulation, physical therapy, occupational therapy, transcutaneous electrical nerve stimulation (TENS), acupuncture, cognitive-behavioral therapy, relaxation techniques",False,True
+D022,Common Cold,"rest, fluids, over-the-counter medication",True,True
+D023,Food Allergy,"Avoidance of allergenic food, antihistamines, epinephrine (in severe cases)",False,False
+D024,Pulmonary Fibrosis,"Medications (immunosuppressants, antifibrotic drugs), oxygen therapy, lung transplantation",True,True
+D025,Hyperosmotic Hyperketotic State,"Insulin therapy to regulate blood sugar levels, intravenous fluids to correct dehydration, electrolyte replacement, correction of underlying causes (e.g., diabetes management)",True,True
+D026,Overflow Incontinence,"Bladder training exercises, double voiding, catheterization, medications (alpha-blockers, anticholinergics), surgery (in severe cases), lifestyle modifications",False,True
+D027,Abdominal Injury,"Immediate medical attention, X-ray, CT scan, ultrasound, stabilization of vital signs, pain management, observation for signs of internal bleeding, potential surgical intervention, wound care",False,False
+D028,Hirsutism,"Medications (anti-androgens, oral contraceptives), hair removal methods, lifestyle changes",False,True
+D029,Neuralgia,"Medications (pain relievers, anticonvulsants), nerve blocks",False,True
+D030,Warthin tumor,Surgical excision,False,False
+D031,Presbycusis,"Hearing aids, assistive listening devices, cochlear implants (in severe cases), communication strategies, counseling, regular hearing evaluations",False,False
+D032,Opioid Use Disorder,"Medication-assisted treatment (such as methadone, buprenorphine, naltrexone), counseling or therapy (such as cognitive-behavioral therapy, contingency management), support groups (such as Narcotics Anonymous), harm reduction strategies, addressing underlying psychological or social factors, lifestyle changes, ongoing monitoring and support",False,True
+D033,Panic disorder,"Antidepressant medications, Cognitive Behavioral Therapy, Relaxation Techniques",False,True
+D034,Esophageal Cancer,"Surgery, chemotherapy, radiation therapy, targeted therapy, immunotherapy, palliative care, clinical trials",False,True
+D035,Alcohol Intoxication,"Supportive care, ensuring hydration, monitoring vital signs, prevention of complications",False,True
+D036,Pilonidal Cyst,"Warm compresses, pain management, antibiotics (for infection), incision and drainage, surgical removal or excision, wound care, lifestyle modifications to prevent recurrence",False,True
+D037,Gestational Diabetes,"Blood sugar monitoring, healthy diet modifications, regular exercise, insulin injections (if needed), close monitoring by healthcare provider",False,True
+D038,Drug Withdrawal,"Gradual tapering of the drug under medical supervision, medications to manage withdrawal symptoms (such as benzodiazepines, clonidine, or buprenorphine), behavioral therapy, support groups, counseling, rehabilitation programs",False,True
+D039,Fetal Alcohol Syndrome,"Early intervention services for developmental delays, educational support, speech and occupational therapy, behavioral interventions, medical management of associated health issues",False,True
+D040,Polycythemia Vera,"Phlebotomy (removal of blood), medication (hydroxyurea, interferon), low-dose aspirin, managing complications (blood thinners, medication for itching)",True,True
+D041,Osteoarthritis,"Pain relievers, physical therapy, weight management, assistive devices, surgery (in severe cases)",False,True
+D042,Fracture of the Neck,"Immobilization (cervical collar, brace), pain management, potential surgical intervention (in severe cases)",False,False
+D043,Myoclonus,"Identifying and treating underlying causes (e.g., medication adjustments, metabolic imbalances), medications (anti-seizure drugs, tranquilizers), physical therapy, supportive care",False,True
+D044,Foreign Body in the Gastrointestinal Tract,"Observation and monitoring (for small, smooth, and non-sharp objects that are likely to pass through the digestive tract without complications), endoscopic removal (using a flexible tube with a camera to locate and remove the foreign body), surgical intervention (in cases of severe complications, large or sharp objects, or failed endoscopic removal attempts), supportive care (such as intravenous fluids, pain management, and antibiotics if infection is present), imaging studies (such as X-rays or CT scans) to evaluate the location and extent of the foreign body, consultation with a gastroenterologist or surgeon for appropriate management",True,True
+D045,Coronary Atherosclerosis,"Lifestyle changes (such as a heart-healthy diet, regular exercise, weight management, smoking cessation), medication (such as aspirin, cholesterol-lowering medications, beta-blockers, calcium channel blockers, nitroglycerin), procedures (such as angioplasty and stenting, coronary artery bypass grafting), cardiac rehabilitation, management of other risk factors (such as high blood pressure, diabetes)",True,True
+D046,Hypertensive Heart Disease,"Medications (antihypertensives), lifestyle changes (healthy diet, exercise, stress management), treatment of underlying conditions",True,True
+D047,Mumps,"Supportive care, pain relievers, isolation, vaccination (MMR)",True,False
+D048,Cholesteatoma,"Surgical removal, antibiotics (for associated infections)",False,False
+D049,Polycystic Kidney Disease,"Symptom management, blood pressure control, dialysis",False,False
+D050,Juvenile Rheumatoid Arthritis,"Medications (NSAIDs, DMARDs), physical therapy, occupational therapy, exercise, assistive devices",True,True
+D051,Hypospadias,"Surgical repair (hypospadias repair surgery), hormone therapy (in some cases), counseling and support for the child and family",False,True
+D052,Parotid stones,"Hydration,Saliva stimulation, Stone removal",False,False
+D053,Achalasia,"Balloon dilation, surgery, medication",False,True
+D054,Rumination Disorder,"Behavioral therapy (such as diaphragmatic breathing techniques), biofeedback, addressing any underlying psychological or medical conditions, dietary modifications",False,True
+D055,Bronchitis,"Rest, fluids, over-the-counter cough suppressants, inhalers (if prescribed), treating underlying cause",True,False
+D056,Balanitis,"Good hygiene, topical antifungal or antibacterial creams, corticosteroid creams (if severe), treating underlying causes",False,False
+D057,Ectopic Pregnancy,"Immediate medical attention, potential medical procedures (such as medication or surgery to remove the ectopic pregnancy), close monitoring, emotional support",False,True
+D058,Atelectasis,"Treatment of the underlying cause (such as removal of airway obstruction, treatment of lung infection), deep breathing exercises, coughing techniques, incentive spirometry, chest physiotherapy, bronchodilator medications, supplemental oxygen therapy",False,True
+D059,Anorexia Nervosa,"Medical monitoring, nutritional counseling, psychotherapy (such as cognitive-behavioral therapy or family-based therapy), medications (in some cases), hospitalization (for severe cases), support groups",False,True
+D060,Hypergammaglobulinemia,"Treatment of underlying cause or associated condition, immunosuppressive therapy (in some cases)",False,True
+D061,Pregnancy-Induced Hypertension,"Monitoring blood pressure, lifestyle modifications (such as salt restriction, regular exercise), medication (such as antihypertensive drugs) if necessary, close monitoring by healthcare provider",False,True
+D062,Chorioretinitis,"Antiviral medications, corticosteroids, eye drops",False,True
+D063,Open-Angle Glaucoma,"Eye drops to lower intraocular pressure (e.g., prostaglandin analogs, beta blockers, alpha agonists, carbonic anhydrase inhibitors), oral medications (e.g., carbonic anhydrase inhibitors), laser trabeculoplasty, surgical procedures (e.g., trabeculectomy, glaucoma drainage implants)",False,True
+D064,Cranial Nerve Palsy,"Treatment depends on the underlying cause and specific cranial nerve affected. It may include medications (such as corticosteroids or antiviral drugs), physical therapy, speech therapy, occupational therapy, eye exercises, surgery (in some cases), and management of any underlying conditions.",False,True
+D065,Corneal Abrasion,"Eye patching, lubricating eye drops, antibiotic ointments (if infected), avoiding further eye irritation",False,False
+D066,Hiatal Hernia,"Lifestyle changes, medications (antacids, proton pump inhibitors)",False,True
+D067,Type 2 Diabetes,"insulin, medication, lifestyle change",True,True
+D068,Uterine Fibroids,"Watchful waiting (for small or asymptomatic fibroids), medication (such as hormonal birth control, GnRH agonists, progestin-releasing intrauterine devices), minimally invasive procedures (such as uterine artery embolization, myomectomy), hysteroscopic procedures (such as hysteroscopic myomectomy or endometrial ablation), surgical removal of fibroids (such as laparoscopic or robotic-assisted myomectomy, hysterectomy), focused ultrasound ablation, hormonal therapy, alternative approaches (such as acupuncture or herbal remedies)",False,True
+D069,Angle-Closure Glaucoma,"Medications (e.g., oral or intravenous acetazolamide, topical beta blockers, alpha agonists, prostaglandin analogs), laser peripheral iridotomy, surgical procedures (e.g., trabeculectomy, glaucoma drainage implants)",False,True
+D070,Chronic Headache,"Pain-relieving medications, relaxation techniques, stress management",False,True
+D071,Acute Kidney Injury,"Treating underlying cause, supportive care, medications to manage complications, dialysis (in severe cases)",True,True
+D072,Scarlet Fever,"Antibiotics (such as penicillin or erythromycin), rest, fluids, symptomatic relief",True,False
+D073,Thoracic Aortic Aneurysm,"Regular monitoring and imaging tests to assess aneurysm size and growth, lifestyle modifications (e.g., blood pressure control, avoiding smoking, managing cholesterol levels), medication (e.g., beta-blockers, ACE inhibitors) to manage blood pressure and reduce the risk of rupture, surgical intervention",False,True
+D074,Scleroderma,"Medications (immunosuppressants), therapy, symptom management",False,True
+D075,Bone Spur of the Calcaneus,"Nonsteroidal anti-inflammatory drugs (NSAIDs), orthotic devices, physical therapy, stretching exercises, shoe modifications, corticosteroid injections, surgical removal (in severe cases)",False,True
+D076,Ethylene glycol poisoning-2,"Blood tests, Supportive Measures, Gastric Decontamination, Antidote Administration, Hemodialysis",False,False
+D077,Pica,"Behavioral therapy, addressing underlying nutritional deficiencies, addressing any medical complications, family support",False,True
+D078,Induced Abortion,"Medical Abortion: Medication (such as mifepristone and misoprostol) is used to induce abortion, which can be done in the early stages of pregnancy. Surgical Abortion: A healthcare professional performs a procedure to remove the pregnancy, which can involve suction aspiration or dilation and curettage (D&C). It's important to consult with a healthcare professional to discuss the options and determine the most suitable method.",True,True
+D079,Tension Headache,"Over-the-counter pain relievers, relaxation techniques, stress management",False,False
+D080,Tuberculosis,"antibiotics, long-term medication",True,True
+D081,Urethral Valves,"Surgical intervention (valve ablation or resection), catheterization, medications for symptoms and complications",False,True
+D082,Hashimoto Thyroiditis,"Thyroid hormone replacement (levothyroxine), monitoring and management of symptoms",True,True
+D083,Parkinson Disease,"Medications (levodopa, dopamine agonists), physical therapy, deep brain stimulation",False,True
+D084,Cryptorchidism,"Observation and monitoring (in cases of mild or transient cryptorchidism), hormone therapy (to stimulate testicular descent), surgical intervention (orchiopexy) to reposition the testicle(s) into the scrotum, if necessary, performed around the age of 6 to 12 months, open or laparoscopic surgery (in cases of high or persistent cryptorchidism), testicular prostheses (in cases of absent or non-functional testicles), regular follow-up visits with a urologist or pediatric surgeon",False,True
+D085,Mucocele,"Observation, Surgical removal if necessary",False,False
+D086,Empyema,"Antibiotics, drainage (chest tube insertion, thoracentesis), surgical intervention (decortication), supportive care, treatment of underlying cause",True,False
+D087,Abdominal Hernia,"Watchful waiting, hernia truss, surgical repair, lifestyle changes",False,True
+D088,Hemarthrosis,"RICE method (Rest, Ice, Compression, Elevation), pain management, joint aspiration or drainage (in severe cases)",False,False
+D089,Pregnancy-Related Back Pain,"Prenatal exercises (such as stretching and strengthening exercises), good posture, heat or cold therapy, prenatal massages, supportive devices (such as pregnancy belts), physical therapy",False,True
+D090,Muscle Spasm,"Stretching and relaxation exercises, heat or cold therapy, over-the-counter pain relievers, muscle relaxants, physical therapy, lifestyle modifications",False,True
+D091,Diverticulosis,"High-fiber diet, medications (pain relievers, antibiotics)",False,True
+D092,Dry Skin,"Moisturizing creams or lotions, avoiding hot showers or baths, using mild soaps",False,False
+D093,Alcohol Use Disorder,"Detoxification (if necessary), counseling or therapy (such as cognitive-behavioral therapy, motivational interviewing), support groups (such as Alcoholics Anonymous), medication (such as disulfiram, naltrexone, acamprosate), addressing underlying psychological or social factors, lifestyle changes, ongoing monitoring and support",False,True
+D094,Muscular Dystrophy,"Supportive care, physical therapy, assistive devices, medications for symptom management, gene therapies (in some cases)",False,True
+D095,Vaginal Yeast Infection,"Over-the-counter antifungal creams, ointments, or suppositories (such as miconazole, clotrimazole, or terconazole), prescription-strength antifungal medications (in severe or recurrent cases), oral antifungal medications (if recommended by a healthcare professional), topical corticosteroids (for relief of itching and inflammation), maintaining good hygiene practices, avoiding irritants (such as scented products), wearing breathable cotton underwear, avoiding tight-fitting clothing, probiotics (to restore healthy vaginal flora)",False,True
+D096,Osteoporosis,"Calcium and vitamin D supplements, regular exercise, medications to slow bone loss",False,True
+D097,Syndrome of Inappropriate Secretion of ADH (SIADH),"Treating underlying cause, fluid restriction, medications to suppress ADH (vasopressin) secretion, addressing electrolyte imbalance",False,True
+D098,Myasthenia Gravis,"Medications (acetylcholinesterase inhibitors, immunosuppressants), thymectomy (in some cases)",True,True
+D099,Torticollis,"Physical therapy exercises, pain relievers, botulinum toxin injections (in severe cases)",False,True
+D100,Complex Regional Pain Syndrome (CRPS),"Physical therapy, medications, nerve blocks",False,True
+D101,Gastroenteritis (Stomach Flu),"Rest, fluids (electrolyte solutions), bland diet, avoiding irritating foods, over-the-counter medications for symptom relief",True,True
+D102,Scleritis,"Steroid eye drops, nonsteroidal anti-inflammatory drugs (NSAIDs), immunosuppressants",False,False
+D103,Cirrhosis,"Treatment aims to manage symptoms, slow down disease progression, and address underlying causes. It may include: lifestyle modifications (e.g., avoiding alcohol, maintaining a healthy diet), medication (e.g., diuretics, lactulose, antiviral drugs), procedures (e.g., paracentesis, transjugular intrahepatic portosystemic shunt), liver transplantation (in severe cases)",True,True
+D104,Lung Contusion,"Supportive care (including supplemental oxygen, pain management, and respiratory support), monitoring in a hospital setting (to assess lung function and overall stability), treatment of associated injuries (such as rib fractures), management of complications (such as pneumonia or respiratory failure), prevention of further complications (such as deep vein thrombosis or pressure ulcers), respiratory therapy (including breathing exercises and airway clearance techniques), possible use of mechanical ventilation in severe cases",True,True
+D105,Corneal Disorder,"Treatment depends on the specific corneal disorder and may include: artificial tears or lubricating eye drops, antibiotic or antifungal eye drops (if infection is present), corticosteroid eye drops or ointments (to reduce inflammation), bandage contact lenses, therapeutic contact lenses, corneal transplantation (in severe cases), refractive surgeries (such as LASIK or PRK) to correct vision, protective eyewear or sunglasses, avoiding irritants or triggers, regular eye examinations and monitoring, lifestyle modifications (such as proper eye hygiene and avoiding eye strain)",False,True
+D106,Mucoepidermoid carcinoma,"Surgery, Radiation therapy",False,True
+D107,Carpal Tunnel Syndrome,"Wrist splints, avoiding repetitive hand movements, applying cold or hot compresses, gentle exercises, ergonomic adjustments",False,False
+D108,Macular Degeneration,"Vision aids, medications (injections into the eye), laser therapy, photodynamic therapy, surgical intervention",False,True
+D109,Atrophic vaginitis,"Vaginal moisturizers, Vaginal estrogen therapy, Lifestyle modifications",False,True
+D110,Osteochondrosis,"Physical therapy, pain medications, rest, surgery",False,True
+D111,Chronic Inflammatory Demyelinating Polyneuropathy (CIDP),"Immunoglobulin therapy, corticosteroids, physical therapy",False,True
+D112,Parasitic Infections,"Prescription medications (topical or oral antiparasitic agents), washing clothes and bedding in hot water",False,True
+D113,Normal Pressure Hydrocephalus,"Ventriculoperitoneal shunt placement, medication management for symptoms",False,True
+D114,Kidney Stone,"Pain management, increased fluid intake, medication to facilitate stone passage, minimally invasive procedures or surgery",False,True
+D115,Pituitary Disorder,"Treatment depends on the specific pituitary disorder and may involve medications, surgery, hormone replacement therapy",False,True
+D116,Pinguecula,"Artificial tears, lubricating eye drops, sunglasses for UV protection, surgical removal (in severe cases)",False,False
+D117,Influenza (Flu),"Rest, fluids, over-the-counter medications for symptom relief, antiviral medications (in some cases)",True,True
+D118,Cat Scratch Disease,"Antibiotics (azithromycin, doxycycline), pain management, supportive care",True,False
+D119,Hyperemesis Gravidarum,"Intravenous fluids to prevent dehydration, anti-nausea medications, nutritional support, rest, monitoring for weight loss and electrolyte imbalance",False,True
+D120,Diabetic retinopathy,"Management of blood sugar levels, blood pressure control, cholesterol management, regular eye examinations, laser treatment , intravitreal injections of anti-VEGF medications, vitrectomy",False,True
+D121,Aplastic Anemia,"Blood transfusions, bone marrow-stimulating medications, immunosuppressive therapy, stem cell transplant (in severe cases), supportive care",True,True
+D122,Wilson Disease,"Medications to remove copper from the body (chelators), dietary changes, liver transplant (in severe cases)",True,True
+D123,Drug Abuse (Barbiturates),"Medical detoxification, supportive care, counseling, rehabilitation programs",False,False
+D124,Primary Insomnia,"Cognitive-behavioral therapy for insomnia (CBT-I), sleep hygiene practices (such as maintaining a regular sleep schedule, creating a comfortable sleep environment), relaxation techniques, stimulus control techniques (such as limiting bed activities to sleep only), sleep restriction therapy, medications for insomnia (such as sedative-hypnotics, melatonin agonists)",False,True
+D125,Mastoiditis,"Antibiotics (oral or intravenous) to treat the underlying bacterial infection, pain relievers (such as acetaminophen or ibuprofen) for pain and fever, ear drops (if there is drainage from the ear), surgical intervention (in severe or chronic cases), such as mastoidectomy (removal of infected mastoid bone cells) or tympanostomy tube placement (to relieve pressure and drain fluid from the middle ear), supportive care (rest, hydration, warm compresses)",True,True
+D126,Acinic cell carcinoma,"Surgery, Radiation therapy",False,True
+D127,Arthritis,"Medications, physical therapy, surgery (in severe cases)",False,True
+D128,Wharton's duct stones,"Hydration,Saliva stimulation, Stone removal",False,False
+D129,Pharyngitis,"Rest, pain relievers, throat lozenges, antibiotics (if bacterial infection), symptomatic relief",True,False
+D130,Pericarditis,"Nonsteroidal anti-inflammatory drugs (NSAIDs) to reduce inflammation and pain, colchicine (for recurrent or persistent pericarditis), corticosteroids (in severe cases or when NSAIDs are ineffective), antibiotics (if bacterial infection is present), lifestyle modifications (rest, avoiding strenuous activity), treating underlying causes (if identified), potential pericardiocentesis (fluid drainage)",True,True
+D131,Antihypertensives Poisoning,"Immediate medical attention, activated charcoal administration, supportive care, specific antidotes",False,False
+D132,Hypothyroidism,"Hormone replacement therapy with synthetic thyroid hormone (levothyroxine), regular monitoring of thyroid hormone levels and adjustment of medication dosage, lifestyle modifications (such as healthy diet and regular exercise), management of associated symptoms (such as cholesterol-lowering medications or antidepressants), education and support for long-term management",True,True
+D133,Oral Leukoplakia,"Regular monitoring and follow-up, identification and elimination of potential irritants (such as tobacco or alcohol), improving oral hygiene practices, medication (such as topical retinoids or antifungal agents), surgical removal (in some cases), cryotherapy (freezing the patches), laser therapy, lifestyle modifications (such as healthy diet), regular dental check-ups, education and support",False,True
+D134,Seborrheic Dermatitis,"Topical antifungal creams or ointments, medicated shampoos, corticosteroid creams",False,False
+D135,Hydrocephalus,"Shunt placement (to divert excess cerebrospinal fluid), endoscopic third ventriculostomy, medication (in some cases)",False,True
+D136,Marijuana Abuse,"Behavioral therapy, counseling, support groups, medication, detoxification",False,True
+D137,Chronic Otitis Media,"Antibiotics, ear drops, surgical intervention (in some cases)",False,False
+D138,Pterygium,"Artificial tears, eye lubricants, surgical removal (in severe cases)",False,False
+D139,Hepatic Encephalopathy,"Treating underlying liver disease, medications to manage symptoms, dietary modifications",False,True
+D140,Tietze Syndrome,"Nonsteroidal anti-inflammatory drugs (NSAIDs), pain relievers, local heat or ice application, avoiding activities that worsen symptoms, supportive measures (such as wearing loose clothing or using supportive pillows), physical therapy (to improve posture and strengthen muscles), corticosteroid injections (in some cases), stress reduction techniques",False,True
+D141,Nose Disorder,"Treatment depends on the underlying cause (such as allergies, sinusitis, or nasal polyps), and may include medications (such as decongestants, antihistamines, nasal sprays), saline nasal irrigation, steam inhalation, allergy management, antibiotics (if bacterial infection is present), surgical intervention (in some cases)",True,True
+D142,Exfoliation Glaucoma,"Eye drops to lower intraocular pressure (e.g., prostaglandin analogs, beta blockers, alpha agonists, carbonic anhydrase inhibitors), laser trabeculoplasty, surgical procedures (e.g., trabeculectomy, glaucoma drainage implants)",False,False
+D143,Protein Deficiency,"Increasing protein intake through diet (lean meats, fish, dairy, legumes, nuts), protein supplements, nutritional counseling, addressing underlying causes (e.g., malabsorption)",True,False
+D144,Thrombocytopenia,"Treatment of underlying cause, platelet transfusion (if severe), medication (corticosteroids, immunosuppressants), avoiding medications that can worsen platelet counts",False,True
+D145,Alopecia,"Topical medications (minoxidil), oral medications (finasteride), steroid injections, hair transplant surgery, wigs or hairpieces",False,True
+D146,Polymyalgia Rheumatica,"Low-dose corticosteroids, nonsteroidal anti-inflammatory drugs (NSAIDs)",True,False
+D147,Bone Cancer,"Surgery, chemotherapy, radiation therapy, targeted therapy",True,True
+D148,Preeclampsia,"Bed rest, blood pressure monitoring, frequent prenatal visits, medication (such as antihypertensive drugs), magnesium sulfate (for severe cases), delivery of the baby (in severe cases)",False,True
+D149,Hypertrophic Obstructive Cardiomyopathy (HOCM),"Medications to relieve symptoms and improve heart function (such as beta-blockers, calcium channel blockers, and disopyramide), medications to prevent abnormal heart rhythms (such as anti-arrhythmic drugs), medications to reduce blood clotting (such as aspirin or anticoagulants), implantable cardioverter-defibrillator (ICD) placement (to monitor and correct abnormal heart rhythms), septal myectomy (surgical removal of a portion of the thickened heart muscle), alcohol septal ablation (destruction of excess heart muscle with alcohol injection), lifestyle modifications (such as avoiding strenuous activities, managing stress, and maintaining a healthy weight), regular follow-up visits with a cardiologist",True,True
+D150,Nonalcoholic Liver Disease (NASH),"Lifestyle changes (weight loss, healthy diet, regular exercise), management of underlying conditions, medication as needed",True,True
+D151,Amyloidosis,Treatment depends on the type and extent of organ damage,True,False
+D152,Ethylene glycol poisoning-3,"Supportive Measures, Gastric Decontamination, Antidote Administration, Hemodialysis",False,False
+D153,Fracture of the Rib,"Pain management, rest, immobilization (splinting or bracing), physical therapy",False,True
+D154,Breast Cancer,"Surgery (lumpectomy or mastectomy), radiation therapy, chemotherapy, hormone therapy, targeted therapy",False,True
+D155,Neuromyelitis Optica,"High-dose corticosteroids, plasma exchange (to remove antibodies from the blood), immunosuppressive therapy (such as azathioprine or rituximab), supportive care to manage symptoms, physical therapy or rehabilitation for functional recovery",False,True
+D156,Eye alignment disorder,"Glasses, Patching therapy, Vision therapy, Botox injections, Surgical intervention",True,True
+D157,Meniere Disease,"Medications (diuretics, anti-vertigo drugs), lifestyle changes",False,True
+D158,Pituitary Adenoma,"Observation and monitoring (for small, non-secreting tumors that are not causing significant symptoms), medication (to manage hormonal imbalances or reduce tumor size), surgery (transsphenoidal surgery to remove the tumor), radiation therapy (in cases where surgery is not possible or to treat residual or recurrent tumors), targeted therapy (in cases of aggressive or resistant tumors), hormone replacement therapy (if necessary), regular follow-up and monitoring to assess tumor growth and hormone levels, management of associated complications or hormone deficiencies",True,True
+D159,Ischemia of the Bowel,"diagnostic tests, intravenous fluids and medications to stabilize the patient, bowel rest, resection, bypass procedure, potential angioplasty",True,True
+D160,Hydrocele of the Testicle,"Observation, surgical drainage (in some cases)",False,False
+D161,Endometrial Cancer,"Surgery (hysterectomy), radiation therapy, chemotherapy, hormone therapy",False,True
+D162,Endometriosis,"Pain medications, hormonal therapies, surgery",False,True
+D163,Hydronephrosis,"Treating underlying cause, medications, ureteral stent, surgery",False,True
+D164,Bell Palsy,"Corticosteroids, antiviral medications, eye protection, physical therapy",False,True
+D165,Abscess of Nose,"Antibiotics, warm compresses, surgical drainage (in severe cases)",False,False
+D166,Bladder Disorder,"Medications, bladder training, lifestyle changes",False,True
+D167,Emphysema,"Smoking cessation (the most important intervention), medications to manage symptoms (such as bronchodilators, inhaled corticosteroids), pulmonary rehabilitation (exercise training, breathing techniques), supplemental oxygen therapy (in advanced cases), vaccination against respiratory infections, avoiding exposure to irritants (such as secondhand smoke or air pollutants), regular monitoring of symptoms and lung function, surgical interventions (such as lung volume reduction surgery or lung transplantation)",True,True
+D168,Extrapyramidal Effect of Drugs,"Adjusting medication dosage, switching to alternative medications",False,True
+D169,Vasculitis,"Treatment depends on the type and severity of vasculitis. It may include corticosteroids, immunosuppressive medications (such as cyclophosphamide or azathioprine), biologic therapies (such as rituximab), disease-specific treatments (such as plasmapheresis for certain types), supportive care to manage symptoms (such as pain relievers or blood pressure medications), monitoring and management of associated complications (such as organ damage or infections)",True,True
+D170,Female Infertility of Unknown Cause,"Fertility testing and evaluation (hormone tests, imaging, genetic screening), lifestyle modifications (healthy diet, regular exercise, stress reduction), fertility treatments (assisted reproductive technologies, fertility medications)",False,True
+D171,Syringomyelia,"Surgical decompression, draining of syrinx (cyst), physical therapy, pain management techniques",False,True
+D172,Von Hippel-Lindau Disease,"Regular monitoring and surveillance to detect and manage tumor growth and associated complications, surgical removal or treatment of tumors if necessary, embolization or radiation therapy for certain tumors, medication or surgery to manage hormonal issues (such as pheochromocytomas), genetic counseling and testing, screening and management for other potential complications (such as kidney function monitoring)",False,True
+D173,Hemorrhoids,"Increasing fiber intake, staying hydrated, avoiding straining during bowel movements, warm sitz baths, topical creams or ointments, over-the-counter pain relievers (after consulting with a healthcare provider)",False,False
+D174,Bursitis,"Rest, ice, compression, elevation (RICE therapy), pain relievers, physical therapy, steroid injections",False,True
+D175,Cannabis Use Disorder,"Counseling or therapy (such as cognitive-behavioral therapy, motivational interviewing), support groups, addressing underlying psychological or social factors, lifestyle changes, addressing co-occurring mental health conditions, harm reduction strategies, ongoing monitoring and support",False,True
+D176,Heart Block,"Medications (such as beta-blockers, calcium channel blockers), pacemaker implantation (in severe cases or symptomatic heart block), underlying condition management",True,True
+D177,Hemolytic Anemia,"Treatment of underlying cause, blood transfusions, medications (immunosuppressants, corticosteroids), splenectomy (in some cases), supportive care, folic acid or iron supplementation",True,True
+D178,Benzodiazepine Use Disorder,"Gradual tapering off benzodiazepines under medical supervision, counseling or therapy (such as cognitive-behavioral therapy), support groups, addressing underlying psychological or social factors, lifestyle changes, addressing co-occurring mental health conditions, harm reduction strategies, ongoing monitoring and support",False,True
+D179,Mitral Valve Disease,"Medications, lifestyle changes, surgical repair or replacement of the valve (in severe cases)",True,True
+D180,Varicose Veins,"Elevating legs, wearing compression stockings, regular exercise, avoiding prolonged sitting or standing, maintaining a healthy weight",False,False
+D181,Recurrent salivary stones,"Hydration,Saliva stimulation, Stone removal",False,False
+D182,Ocular Hypertension,"Observation with regular eye exams, use of eye drops to lower intraocular pressure (if necessary)",False,False
+D183,Colonic Polyp,"Polypectomy (removal of polyp during colonoscopy), surveillance colonoscopy (regular monitoring for recurrence or new polyps), lifestyle modifications (healthy diet, regular exercise, smoking cessation), follow-up based on pathology findings",False,True
+D184,Indigestion,"Lifestyle changes (e.g., dietary modifications, stress reduction), over-the-counter antacids, medication, therapy",False,True
+D185,Acute Glaucoma,"Medications (eye drops), laser therapy, surgery (in some cases)",False,True
+D186,Hypoglycemia,"Consuming glucose or sugar-containing foods, adjusting medication or insulin dosage",False,True
+D187,Sciatica,"Rest, gentle stretching exercises, warm or cold compresses, prenatal massages, maintaining good posture, avoiding activities that worsen the pain",False,False
+D188,Cystic Fibrosis,"Medications (mucus-thinning drugs, bronchodilators), chest physical therapy, enzyme supplements, lung transplant (in severe cases)",True,True
+D189,Insulin Overdose,"Immediate treatment of hypoglycemia, medical assistance, adjusting insulin dosage and regimen",False,True
+D190,Peritonsillar Abscess,"Antibiotics to treat infection, drainage of the abscess (needle aspiration or incision and drainage), pain relievers, warm saltwater gargles, rest, fluids, surgical removal of the tonsils (in chronic or recurrent cases)",True,True
+D191,Leishmaniasis,"Antiparasitic medications, treatment of complications, vector control measures (in endemic areas)",True,True
+D192,Pulmonary Congestion,"Diuretics, medications to manage underlying conditions (e.g., heart failure), oxygen therapy, lifestyle changes",True,True
+D193,Magnesium Deficiency,"Dietary changes (consuming magnesium-rich foods), oral magnesium supplements, intravenous magnesium therapy (in severe cases), addressing underlying causes (e.g., malabsorption), medical supervision and monitoring",True,True
+D194,Fracture of the Shoulder,"Immobilization (sling, brace), pain management, physical therapy, surgical intervention (in severe cases)",False,True
+D195,Thrombophlebitis,"Medications to manage pain and inflammation, compression stockings or bandages to promote blood flow, elevation of the affected limb, warm compresses, regular movement and exercise, treatment of underlying causes (such as infection or intravenous catheter removal), anticoagulant therapy to prevent clot formation or progression",True,True
+D196,Encephalitis,"Hospitalization, antiviral medications (if caused by a viral infection), supportive care",True,True
+D197,Fat Embolism,"Supportive care (oxygen therapy, fluid resuscitation), managing symptoms (pain medication, anticoagulants), treatment of underlying cause if possible",False,True
+D198,Cyst of the Eyelid,"Warm compresses, good eyelid hygiene, antibiotic ointments (if infected), surgical removal (if necessary)",False,False
+D199,Dislocation of the Patella,"Manual reduction, immobilization, physical therapy",False,True
+D200,Conjunctivitis due to Allergy,"Allergen avoidance, antihistamine eye drops, cold compresses, lubricating eye drops",False,False
+D201,Coagulation (Bleeding) Disorder,"Blood transfusions, clotting factor replacement therapy, medications to stimulate clotting, lifestyle modifications, surgery (in some cases)",False,True
+D202,Idiopathic Absence of Menstruation,"Evaluation to determine underlying cause, hormone therapy",False,True
+D203,Migraine,"Pain-relieving medications, lifestyle changes, preventive medications",False,True
+D204,Temporomandibular Joint Disorder,"Self-care measures (rest, applying heat or cold, jaw exercises), pain medications, physical therapy, oral splints",False,True
+D205,Vitamin A Deficiency,"Vitamin A supplementation, dietary changes to include foods rich in vitamin A",False,False
+D206,Glucocorticoid Deficiency,Hormone replacement therapy with glucocorticoid medications,True,True
+D207,Astigmatism,"Eyeglasses, contact lenses, refractive surgery (LASIK, PRK), orthokeratology, toric intraocular lenses",False,False
+D208,Low-Tension Glaucoma,"Eye drops to lower intraocular pressure (e.g., prostaglandin analogs, beta blockers, alpha agonists, carbonic anhydrase inhibitors), oral medications (e.g., carbonic anhydrase inhibitors), laser trabeculoplasty, surgical procedures (e.g., trabeculectomy, glaucoma drainage implants)",False,True
+D209,Headache after lumbar puncture,"Epidural blood patch, Conservative measures",False,False
+D210,Flat Feet,"Supportive footwear, orthotic inserts, physical therapy exercises, pain management, surgery (in severe cases)",True,True
+D211,Carbon Monoxide Poisoning,"Fresh air, oxygen therapy, immediate medical attention",False,True
+D212,Orbital Cellulitis,"Antibiotics, hospitalization (in severe cases), surgical drainage (in some cases)",False,False
+D213,Pulmonary Eosinophilia,"Identification and treatment of underlying causes (such as parasitic infections, drug reactions, or allergic reactions), corticosteroids (such as prednisone) to reduce inflammation, bronchodilators (such as inhalers) to relieve bronchospasm and improve airflow, antiparasitic medications (if parasitic infection is identified), immunosuppressive medications (in severe cases), avoidance of triggers or allergens (if identified), symptomatic treatment for associated symptoms (such as fever or cough), regular monitoring and follow-up with a healthcare professional",True,True
+D214,Antimicrobial Drugs Poisoning,"Immediate medical attention, supportive care, antidote administration",False,False
+D215,Eczema,"Emollients (moisturizers), topical corticosteroids or immunomodulators, avoiding triggers",False,False
+D216,Pneumonia,"Antibiotics, antiviral medications (if applicable), rest, fluids, symptomatic relief",True,True
+D217,Intestinal Malabsorption,"Dietary modifications (specific to the underlying cause), supplementation of deficient nutrients, medications (to manage symptoms or underlying condition), treatment of underlying cause",True,True
+D218,Conductive Hearing Loss,"Medications, surgical intervention, hearing aids",False,True
+D219,Pinworm Infection,"Anthelmintic medication, hygiene measures (handwashing, trimming nails, laundering bedding), treatment for household members",False,True
+D220,Esophageal Varices,"Medications (beta-blockers, vasoconstrictors), endoscopic therapies, band ligation, transjugular intrahepatic portosystemic shunt (TIPS), surgical interventions",False,True
+D221,Dermatitis due to Sun Exposure,"Moisturizers, cool compresses, topical corticosteroids",False,False
+D222,Gonorrhea,"Antibiotics (dual therapy with ceftriaxone and azithromycin), safe sexual practices, partner notification",False,True
+D223,Chronic Sinusitis,"Saline nasal irrigation, nasal corticosteroids, antibiotics (in bacterial cases), decongestants, pain relievers, surgery (in severe or chronic cases)",True,True
+D224,Concussion,"Physical and cognitive rest, gradual return to normal activities, symptom management (such as pain relievers or anti-nausea medication), monitoring for complications (such as changes in neurological function), cognitive rehabilitation (if persistent cognitive problems), management of associated symptoms (such as sleep disturbances or mood changes), education and support for recovery, avoiding further head injuries",False,True
+D225,Parathyroid Adenoma,"Surgical removal of the adenoma (parathyroidectomy), medications to manage calcium levels",True,True
+D226,Herpangina,"Symptomatic relief (pain relievers, throat lozenges, mouth rinses), rest, fluids, maintaining good oral hygiene, avoiding spicy or acidic foods",True,False
+D227,Conversion Disorder,"Psychotherapy (such as cognitive-behavioral therapy or psychodynamic therapy), physical therapy or rehabilitation (to improve physical function and reduce disability), addressing underlying stressors or psychological factors, supportive care and reassurance, potentially medications (such as antidepressants or anti-anxiety medications)",False,True
+D228,Lymphedema,"Compression therapy, exercise, lymphatic drainage techniques, surgery (in severe cases)",False,True
+D229,Hirschsprung Disease,Surgery to remove the affected part of the colon (pull-through procedure),False,True
+D230,Rheumatoid Arthritis,"Medications (nonsteroidal anti-inflammatory drugs, disease-modifying antirheumatic drugs), physical therapy, exercise",True,True
+D231,Turner syndrome,"Growth hormone therapy, Estrogen replacement therapy, Cardiac and renal evaluations",False,True
+D232,Endophthalmitis,"Immediate medical attention is required. Treatment may include: intravenous antibiotics or antifungal medications, intravitreal injections (injections of antibiotics or antifungal agents directly into the eye), vitrectomy (surgical removal of the gel-like fluid within the eye), topical or oral medications (to manage pain, inflammation, or infection), frequent follow-up visits with an ophthalmologist, supportive care (such as warm compresses or lubricating eye drops)",True,True
+D233,Myelodysplastic Syndrome,"Supportive care, blood transfusions, medications, bone marrow transplantation (in some cases)",True,True
+D234,Premature Ventricular Contractions (PVCs),"Monitoring (in most cases), lifestyle changes, medications (beta-blockers, antiarrhythmics)",False,True
+D235,Ludwig's angina,"Intravenous antibiotics, airway management, surgical drainage",True,False
+D236,Cryptococcosis,"Antifungal medication (e.g., Amphotericin B, Fluconazole), supportive care",True,True
+D237,Diabetic Kidney Disease,"Blood pressure control, blood sugar control, medications to protect the kidneys (such as ACE inhibitors or ARBs), lifestyle modifications (healthy diet, regular exercise, quitting smoking), management of underlying diabetes, treatment of complications (such as dialysis or kidney transplantation in advanced stages)",True,True
+D238,Premenstrual Tension Syndrome,"Lifestyle changes, medications (pain relievers, hormonal contraceptives), therapy",False,True
+D239,Drug Abuse (Methamphetamine),"Detoxification, counseling, behavioral therapies, support groups, medication-assisted treatment (if applicable)",False,True
+D240,Urge Incontinence,"Behavioral therapies (bladder training, pelvic floor exercises), medications (anticholinergics, beta-3 agonists), medical devices",False,True
+D241,Dengue Fever,"Supportive care (hydration, pain relievers, rest), monitoring, medical attention for severe cases (fluid replacement, blood transfusion, hospitalization)",True,True
+D242,Lead Poisoning,"Removal of lead source, chelation therapy (in severe cases), supportive care, medication to manage symptoms, addressing complications (such as anemia)",True,True
+D243,Actinic Keratosis,"Topical medications (e.g., fluorouracil, imiquimod, diclofenac), cryotherapy, curettag",False,True
+D244,Choledocholithiasis,"Non-surgical treatment options: Medications to manage pain and discomfort, antibiotics",False,True
+D245,Head and Neck Cancer,"Treatment depends on the specific type and stage of cancer, and may include surgery, radiation therapy, chemotherapy, targeted therapy, immunotherapy",True,True
+D246,Sjögren's syndrome,"Symptomatic relief with artificial tears, saliva substitutes, frequent sips of water, medications to stimulate saliva production, immune-modulating drugs",True,True
+D247,Peritonitis,"Intravenous antibiotics to treat the infection, intravenous fluids to restore hydration, drainage or removal of any underlying fluid or abscess, surgery to repair or remove the source of infection",True,False
+D248,Anemia of Chronic Disease,"Treating the underlying chronic disease, addressing nutritional deficiencies, blood transfusions (in severe cases)",True,True
+D249,Ovarian Torsion,"Emergency medical attention (as ovarian torsion is a medical emergency), imaging tests (such as ultrasound or CT scan) to diagnose torsion, surgical intervention (laparoscopic or open surgery) to untwist the ovary and restore blood flow, removal of the ovary (if it is damaged or non-viable), pain management (medications for pain relief)",True,True
+D250,Lupus,"Medications (anti-inflammatory, immunosuppressants), lifestyle modifications",True,True
+D251,Neonatal Jaundice,"Phototherapy, exchange transfusion (in severe cases), monitoring of bilirubin levels, addressing underlying causes (e.g., breastfeeding)",False,True
+D252,Gastrointestinal Hemorrhage,"Blood transfusions, endoscopy, surgery (in severe cases), medications to stop bleeding",False,True
+D253,Dislocation of the Ankle,"Reduction (realigning the bones), immobilization, rehab",False,False
+D254,Vaginal Cyst,"Observation (if asymptomatic), warm compresses, sitz baths, surgical removal (if necessary)",False,False
+D255,Orthorexia Nervosa,"Psychotherapy (such as cognitive-behavioral therapy or acceptance and commitment therapy), nutrition education, challenging distorted beliefs, addressing underlying issues",False,True
+D256,Urinary Tract Infection (UTI),"Antibiotics, increased fluid intake, pain relievers",False,False
+D257,Placenta Previa,"Bed rest, avoiding strenuous activity, frequent prenatal check-ups, potential hospitalization, potential cesarean delivery",False,False
+D258,Acute Pancreatitis,"Hospitalization, intravenous fluids to restore hydration, pain management, bowel rest, nutritional support, medications to control pain and inflammation",True,True
+D259,Gum Disease,"Oral hygiene practices (brushing, flossing), professional dental cleanings, medications, surgical interventions",False,True
+D260,Panic Attack,"Breathing exercises, relaxation techniques, therapy",False,True
+D261,Lice,"Over-the-counter or prescription medications specifically designed to kill lice (such as pediculicides), manual removal of lice and nits using a fine-toothed comb, washing and drying of infested clothing and bedding at high temperatures, vacuuming of upholstery and household surfaces, disinfection of personal items that cannot be washed or dried, avoiding direct head-to-head contact with infested individuals, education and prevention strategies",False,True
+D262,Pyloric stenosis,"Ultrasound, Blood tests, Pyloromyotomy",False,False
+D263,Pigmentary Glaucoma,"Eye drops to lower intraocular pressure (e.g., prostaglandin analogs, beta blockers, alpha agonists, carbonic anhydrase inhibitors), laser trabeculoplasty, surgical procedures (e.g., trabeculectomy, glaucoma drainage implants)",False,False
+D264,Abscess,"Antibiotics, surgical drainage",True,False
+D265,Myositis,"Medications (corticosteroids, immunosuppressants), physical therapy",False,True
+D266,Von Willebrand Disease,"Desmopressin (DDAVP) medication, replacement therapy with von Willebrand factor (VWF) concentrate or cryoprecipitate, oral contraceptives (for women with heavy menstrual bleeding), avoiding certain medications, dental care precautions, regular medical follow-up",False,True
+D267,Gastroparesis,"Dietary modifications (small, frequent meals; low-fiber, low-fat diet), medication to promote gastric emptying, managing underlying cause if possible",False,True
+D268,Chancroid,"Antibiotics (such as azithromycin or ceftriaxone), pain management, warm compresses, good hygiene",False,False
+D269,Fungal Infection of the Skin,"Antifungal creams, powders, or oral medications, proper hygiene and skin care",False,True
+D270,Stimulant Use Disorder,"Counseling or therapy (such as cognitive-behavioral therapy, motivational interviewing), support groups, medication (if applicable), addressing underlying psychological or social factors, lifestyle changes, addressing co-occurring mental health conditions, harm reduction strategies, ongoing monitoring and support",False,True
+D271,Chronic Fatigue Syndrome,"Symptom management (such as medications to address pain, sleep disturbances, and other symptoms), graded exercise therapy, cognitive-behavioral therapy, sleep management techniques, pacing and energy conservation, stress reduction techniques, nutritional support, medications for specific symptoms",True,True
+D272,Threatened Pregnancy,"Bed rest, medications (progesterone), monitoring, avoiding activities that may stress the pregnancy",False,True
+D273,Chronic Glaucoma,"Eye drops (to reduce intraocular pressure), oral medications, laser therapy, surgery (trabeculectomy, implantable devices), regular eye exams",False,True
+D274,Urticaria (Hives),"Antihistamines, avoiding triggers, corticosteroids (in severe cases)",False,False
+D275,Vitreous Hemorrhage,"Observation, laser treatment, vitrectomy (in severe cases)",False,False
+D276,Binge Eating Disorder,"Psychotherapy (such as cognitive-behavioral therapy or interpersonal therapy), nutritional counseling, medications (in some cases), support groups",False,True
+D277,Hypercholesterolemia,"Lifestyle modifications (healthy diet, regular exercise, weight management, smoking cessation), medications to lower cholesterol levels (such as statins), regular monitoring of cholesterol levels, management of underlying conditions (such as diabetes or high blood pressure), potential additional treatments (such as bile acid sequestrants or PCSK9 inhibitors)",False,True
+D278,Stress Incontinence,"Pelvic floor exercises, behavioral techniques, surgery (in severe cases)",False,False
+D279,Labyrinthitis,"Medications (antibiotics, antivirals), vestibular rehabilitation therapy",False,True
+D280,Dysthymic Disorder,"Psychotherapy (cognitive-behavioral therapy, interpersonal therapy), antidepressant medications",False,True
+D281,Ethylene glycol poisoning-1,"Supportive Measures, Gastric Decontamination, Antidote Administration, Hemodialysis",False,False
+D282,Impulse Control Disorder,"Psychotherapy, medication (in some cases), support groups, behavioral interventions",False,True
+D283,Intracranial Hemorrhage,"Emergency medical attention, surgery (if needed), medications to control bleeding and manage symptoms",False,True
+D284,Postpartum Depression,"Psychotherapy (such as cognitive-behavioral therapy or interpersonal therapy), support groups or peer counseling, antidepressant medication (if recommended by a healthcare professional), hormone therapy (in some cases), lifestyle changes (such as exercise, healthy diet, sleep hygiene), involving a partner or family in the care of the baby, social support and understanding from family and friends, regular follow-up and monitoring by healthcare professionals",True,True
+D285,Injury to the Leg,"R.I.C.E. (Rest, Ice, Compression, Elevation), pain medications, physical therapy",False,True
+D286,Stroke,"Emergency medical attention, medication (clot-busting drugs, anticoagulants), supportive care, rehabilitation (physical therapy, speech therapy), lifestyle modifications (diet, exercise, smoking cessation), addressing underlying risk factors",False,True
+D287,Huntington Disease,"Supportive care, medications (to manage symptoms), therapy",False,True
+D288,Mononucleosis,"Rest, pain relievers, fluids, symptom management",True,False
+D289,Hallucinogen Use Disorder,"Counseling or therapy (such as cognitive-behavioral therapy, motivational interviewing), support groups, addressing underlying psychological or social factors, harm reduction strategies, ongoing monitoring and support",False,True
+D290,Ependymoma,"Surgery, radiation therapy, chemotherapy, targeted therapy, rehabilitation",False,True
+D291,Lymphoma,"Chemotherapy, radiation therapy, immunotherapy, targeted therapy",True,True
+D292,Transient ischemic attack,"Antiplatelet medications, Carotid endarterectomy,  Anticoagulant medications, Lifestyle modifications",False,True
+D293,Normal-Tension Glaucoma,"Eye drops to lower intraocular pressure (e.g., prostaglandin analogs, beta blockers, alpha agonists, carbonic anhydrase inhibitors), oral medications (e.g., carbonic anhydrase inhibitors), laser trabeculoplasty, surgical procedures (e.g., trabeculectomy, glaucoma drainage implants)",False,True
+D294,Thyroid Disease,"Medications (thyroid hormone replacement, antithyroid drugs), radioactive iodine therapy, surgery (in some cases)",True,True
+D295,Bladder Cancer,"Surgery, chemotherapy, radiation therapy",False,True
+D296,Fracture of the Arm,"Immobilization (cast or splint), pain management, physical therapy, surgery (in complex fractures)",False,True
+D297,Kidney Failure,"Treatment depends on the underlying cause and may include medications to manage blood pressure and symptoms, dietary modifications (restricting salt, protein, and potassium), dialysis (hemodialysis or peritoneal dialysis) or kidney transplantation (in end-stage kidney failure), treatment of complications, management of fluid and electrolyte balance, lifestyle modifications (exercise, quitting smoking, healthy diet)",True,True
+D298,Chagas Disease,"Antiparasitic medications, medications to manage symptoms, supportive care",True,True
+D299,Leukemia,"Chemotherapy, radiation therapy, stem cell transplant, targeted therapy, supportive care",True,True
+D300,Vesicoureteral Reflux,"Antibiotics, bladder training exercises, surgical correction (in some cases)",False,False
+D301,Psoriasis,"Topical treatments (corticosteroids, salicylic acid), systemic medications (retinoids, immunosuppressants), phototherapy",False,True
+D302,Infection of Open Wound,"Cleaning and irrigation of the wound, antibiotic therapy (oral or intravenous), wound dressings, wound debridement (if necessary), tetanus prophylaxis",True,True
+D303,Anemia,"Iron supplementation, dietary changes (iron-rich foods), managing underlying causes (such as treating iron deficiency or vitamin B12 deficiency), prenatal vitamins",True,False
+D304,Spondylosis,"Medications (pain relievers, muscle relaxants), physical therapy, exercise, posture improvement, heat or cold therapy, spinal injections, surgery (in severe cases or if conservative treatments fail)",False,True
+D305,Acute Otitis Media,"Antibiotics, pain relievers (e.g., acetaminophen, ibuprofen), warm compresses, ear drops, tympanostomy tubes (in some cases)",True,False
+D306,Fracture,"Immobilization, Surgery, Rehabilitation",False,False
+D307,Round Ligament Pain,"Resting, changing positions slowly, warm compresses, gentle stretching, avoiding sudden movements",False,False
+D308,Autism,"Behavioral therapy, educational interventions, speech and language therapy, medications for associated symptoms",False,True
+D309,Pleomorphic adenoma,Surgical excision,False,False
+D310,Otosclerosis,"Hearing aids, surgical interventions (such as stapedectomy or stapedotomy to replace the affected bone in the middle ear), sodium fluoride therapy (to slow down the progression of the condition), communication strategies and support (such as lip-reading or sign language), regular hearing assessments",False,True
+D311,Bulimia Nervosa,"Psychotherapy (such as cognitive-behavioral therapy or dialectical behavior therapy), nutritional counseling, medications (in some cases), support groups",False,True
+D312,Poisoning due to Analgesics,"Immediate medical attention, activated charcoal administration, supportive care, antidote (if available), treatment for complications",False,False
+D313,Pseudohypoparathyroidism,"Calcium and vitamin D supplementation, management of complications, hormone replacement therapy (if necessary)",False,True
+D314,Anemia due to Malignancy,"Treating underlying malignancy, blood transfusions, medications (erythropoiesis-stimulating agents, iron supplements)",True,True
+D315,Hyperhidrosis,"Antiperspirants, medications (anticholinergics, beta blockers), iontophoresis, Botox injections, surgical interventions (sympathectomy, sweat gland removal)",False,True
+D316,Otitis Media,"Antibiotics (if bacterial infection), pain relievers, observation (in some cases)",True,False
+D317,Benign Kidney Cyst,"Observation, medication (if needed), surgery (in rare cases)",False,True
+D318,Pain after an Operation,"Pain medications, ice packs, rest, wound care",False,True
+D319,Chronic Knee Pain,"Pain management, physical therapy, lifestyle modifications, knee braces or supports",False,True
+D320,Volvulus,Emergency surgery to untwist the affected organ and restore blood flow,False,False
+D321,Scurvy,"Vitamin C supplementation, dietary changes, oral hygiene maintenance",True,False
+D322,Urinary Stones (Kidney Stones),"Pain management, increased fluid intake, medications to help pass the stones, procedures or surgery",False,True
+D323,Injury to the Finger,"RICE method (Rest, Ice, Compression, Elevation), splinting, pain medication, physical therapy, surgery (in severe cases)",False,True
+D324,Retinal Detachment,"Surgical intervention (pneumatic retinopexy, scleral buckle, vitrectomy), laser therapy, cryotherapy, gas or silicone oil injection, positioning, regular eye exams",False,True
+D325,Chronic Rheumatic Fever,"Antibiotics (to treat streptococcal infections), anti-inflammatory medications, medications for heart complications",True,True
+D326,Acute Bronchospasm,"Bronchodilators (inhaled medications), corticosteroids, supplemental oxygen (if needed)",False,True
+D327,Vulvodynia,"Topical medications (such as lidocaine or estrogen creams), nerve blocks, physical therapy (including pelvic floor muscle relaxation exercises), cognitive-behavioral therapy (CBT), biofeedback, medications (such as tricyclic antidepressants or anticonvulsants), vulvar care and hygiene practices, stress management techniques, alternative therapies (such as acupuncture or herbal remedies)",False,True
+D328,Other Specified Feeding or Eating Disorder (OSFED),"Treatment is based on the specific symptoms and can include a combination of psychotherapy, nutritional counseling, medical monitoring, and medications as necessary",False,True
+D329,Anemia due to Chronic Kidney Disease,"Erythropoiesis-stimulating agents (ESA), iron supplementation, blood transfusions (in severe cases)",True,False
+D330,Pemphigus,"Corticosteroids, immunosuppressants, wound care",False,False
+D331,Syphilis,"Antibiotics (usually penicillin), treatment of complications, regular follow-up and testing",True,False
+D332,Omphalitis,"Antibiotics, wound care, surgical intervention (in severe cases)",False,False
+D333,Idiopathic Nonmenstrual Bleeding,"Evaluation to rule out underlying causes (such as hormonal imbalances, polyps, infections, or uterine abnormalities), hormonal therapy (such as birth control pills, hormone replacement therapy), non-hormonal medications (such as tranexamic acid), dilation and curettage (if necessary to remove excessive tissue or investigate the cause), endometrial ablation (in some cases), hysteroscopy (to examine the uterus), surgery (in rare cases), counseling or support for emotional well-being",False,True
+D334,Myofascial Pain Syndrome,"Physical therapy, trigger point injections, dry needling, medications (such as pain relievers, muscle relaxants), relaxation techniques, stress management, massage therapy, myofascial release, heat or cold therapy",False,True
+D335,Vocal cord polyp,"Voice Rest, Speech Therapy, Surgical Removal",True,True
+D336,Rotator Cuff Injury,"Non-surgical treatment options: Rest, ice or heat therapy, pain medications, physical therapy exercises, Arthroscopic surgery",False,True
+D337,Fibromyalgia,"Multidisciplinary approach: Medications for pain management (such as analgesics, antidepressants, and anticonvulsants), physical therapy, occupational therapy, cognitive-behavioral therapy, relaxation techniques, stress management, exercise programs",True,True
+D338,Hypercalcemia,"Treating underlying cause, hydration, medications",True,True
+D339,Secondary Glaucoma,"Treatment of the underlying condition (e.g., medication adjustments, surgery, trauma management, tumor removal, inflammation control)",False,True
+D340,Drug Reaction,"Discontinuation of the offending drug, supportive care, antihistamines, corticosteroids (in severe cases)",True,False
+D341,Acute Sinusitis,"Home remedies (such as nasal saline irrigation, steam inhalation), over-the-counter pain relievers (such as acetaminophen or ibuprofen), nasal decongestants (for short-term use), nasal corticosteroids (to reduce inflammation), plenty of fluids and rest, warm compresses, avoidance of irritants (such as smoke or allergens), prescription antibiotics (if bacterial infection is suspected or confirmed), management of underlying causes (such as allergies or nasal polyps), symptom relief medications (such as cough suppressants or antihistamines)",True,True
+D342,Polycystic Ovarian Syndrome,"Lifestyle changes (diet, exercise, weight management), hormonal contraceptives, fertility treatments (if needed)",False,True
+D343,Optic Neuritis,"High-dose intravenous corticosteroids, treatment of underlying cause, symptom management, visual rehabilitation",False,False
+D344,Adrenal Cancer,"Surgery (adrenalectomy), chemotherapy, radiation therapy, targeted therapy, hormone replacement therapy",False,True
+D345,Intracranial Abscess,"Antibiotics, surgical drainage or removal of the abscess, supportive care",True,False
+D346,Adenoid cystic carcinoma,"Surgery, Radiation therapy",False,True
+D347,Fracture of the Patella,"Immobilization (splint, cast, or brace), pain management, physical therapy, exercises to restore mobility and strength, potential surgical intervention (in severe cases or if displacement is present)",False,True
+D348,Restless Leg Syndrome,"Lifestyle changes (such as regular exercise, avoiding triggers like caffeine), good sleep hygiene (maintaining a regular sleep schedule), leg massages or stretching exercises, hot or cold packs, medication therapy (such as dopamine agonists, anticonvulsants, opioids), iron supplementation (if iron deficiency is present)",False,True
+D349,Cold Sore,"Antiviral medications (topical or oral), pain relievers, antiviral creams, self-care measures",False,True
+D350,Chronic Kidney Disease,"Management of underlying conditions (such as diabetes or high blood pressure), lifestyle modifications (such as healthy diet, regular exercise, smoking cessation), medications (such as ACE inhibitors or diuretics), dialysis (in advanced stages), kidney transplant (in end-stage kidney disease), management of associated complications (such as anemia or bone disease), regular monitoring and follow-up with a nephrologist, education and support for self-care",True,True
+D351,Goiter,"Treatment depends on the underlying cause (medication, radioactive iodine therapy, surgery)",False,True
+D352,Type 1 Diabetes,"Insulin therapy, Blood sugar monitoring, Healthy eating, Regular exercise",False,True
+D353,Dislocation of the Elbow,"Closed reduction (realigning the bones without surgery), immobilization (splint or cast), physical therapy, pain management, surgical intervention (in complex or recurrent cases)",False,True
+D354,Rabies,"Immediate medical attention (post-exposure prophylaxis), wound care, administration of rabies vaccine and immunoglobulin, supportive care, monitoring and management of symptoms",True,True
+D355,Contact Dermatitis,"Avoiding the trigger, corticosteroid creams or ointments, antihistamines",False,False
+D356,Hemophilia,"Replacement therapy with clotting factor concentrates, medications to control bleeding, physical therapy, joint protection measures, genetic counseling and testing for family members",False,True
+D357,Open Wound from Surgical Incision,"Wound care (cleaning, dressing changes), antibiotics (if infection is present), surgical interventions",False,False
+D358,Chronic Migraine,"Medications (such as preventive medications, pain relievers, triptans), lifestyle modifications (such as identifying triggers, stress management, regular sleep patterns), relaxation techniques, biofeedback, cognitive-behavioral therapy, nerve blocks, Botox injections, neuromodulation devices, acupuncture",False,True
+D359,Hyperkalemia,"Treatment of underlying cause, medications to reduce potassium levels, dietary modifications, dialysis (in severe cases)",True,True
+D360,Bipolar Disorder,"Medications (mood stabilizers, antipsychotics), therapy",False,True
+D361,Sedatives Poisoning,"Immediate medical attention, supportive care, antidote administration",False,False
+D362,Plantar Fasciitis,"Rest, stretching exercises, orthotic devices, physiotherapy",False,True
+D363,Priapism,"Medical intervention (aspiration, medication, surgery)",False,True
+D364,Gestational Hypertension,"Monitoring blood pressure, lifestyle modifications (such as salt restriction, regular exercise), medication (such as antihypertensive drugs) if necessary, close monitoring by healthcare provider",False,True
+D365,Pyelonephritis,"Antibiotics (such as fluoroquinolones, cephalosporins, or trimethoprim-sulfamethoxazole) to target the specific bacteria causing the infection, adequate hydration, pain management (such as over-the-counter pain relievers or prescription medications), hospitalization (for severe cases or complications), urine culture to guide antibiotic therapy",True,True
+D366,Drug Abuse (Cocaine),"Medical detoxification, counseling, behavioral therapies, support groups",False,False
+D367,Gout,"Medications (nonsteroidal anti-inflammatory drugs, colchicine), lifestyle changes",False,True
+D368,Narcolepsy,"Stimulant medications, antidepressants, lifestyle modifications, scheduled naps",False,True
+D369,Submandibular stones,"Hydration,Saliva stimulation, Stone removal",False,False
+D370,Dental Caries,"Dental fillings, crowns, root canal treatment, tooth extraction (in severe cases), oral hygiene practices (brushing and flossing), regular dental check-ups, fluoride treatments, dietary modifications (reducing sugary and acidic foods and drinks), dental sealants (for prevention), education on proper oral care",False,False
+D371,Vitamin B12 Deficiency,"Vitamin B12 supplementation (such as oral supplements or injections), dietary changes to include B12-rich foods (such as meat, fish, eggs, and dairy products), identification and management of underlying causes (such as pernicious anemia or malabsorption disorders), management of associated symptoms or complications (such as nerve pain or balance problems), regular monitoring of B12 levels and treatment adjustment",True,True
+D372,Testicular Cancer,"Surgery (orchiectomy), chemotherapy, radiation therapy, surveillance (for some cases)",False,True
+D373,Peyronie Disease,"Medications, traction therapy, surgery",False,True
+D374,Hepatitis due to a Toxin,"Supportive care, removal or avoidance of the toxic substance, management of symptoms",True,False
+D375,Foreign Body in the Throat,"Immediate medical attention, removal of the foreign body, evaluation for any complications",False,False
+D376,Stenosis of the Tear Duct,"Tear duct probing, dilation, surgical correction",False,False
+D377,Lateral Epicondylitis (Tennis Elbow),"Rest, ice or cold therapy, compression, elbow brace or strap, pain relievers, physical therapy exercises, corticosteroid injections (in severe cases), ergonomic modifications",False,True
+D378,Attention Deficit Hyperactivity Disorder (ADHD),"Behavioral therapy, parent training programs, medication (such as stimulants or non-stimulants), individualized education plans (IEPs) for academic support, accommodations and modifications in school, psychoeducation, counseling",False,True
+D379,Tuberous Sclerosis,"Medications (anti-seizure, behavioral, etc.), surgery (for tumor removal), therapy (physical, occupational, speech), educational interventions, support services, genetic counseling, monitoring of organ involvement",False,True
+D380,Pulmonic Valve Disease,"Medications (such as diuretics, beta-blockers, or calcium channel blockers), surgical interventions (such as balloon valvuloplasty or valve replacement), lifestyle modifications (such as regular exercise, heart-healthy diet, smoking cessation), regular follow-up with a cardiologist",True,True
+D381,Pelvic Organ Prolapse,"Pelvic floor exercises, pessary use, hormone therapy, surgical repair (in severe cases)",False,True
+D382,"Sedative, Hypnotic, or Anxiolytic Use Disorder","Gradual tapering off sedatives, hypnotics, or anxiolytics under medical supervision, counseling or therapy (such as cognitive-behavioral therapy), support groups, addressing underlying psychological or social factors, lifestyle changes, addressing co-occurring mental health conditions, harm reduction strategies, ongoing monitoring and support",False,True
+D383,Atrial Fibrillation,"Medications (antiarrhythmics, anticoagulants), electrical cardioversion, catheter ablation, lifestyle changes",True,True
+D384,Asthma,"Long-term control medications (such as inhaled corticosteroids, long-acting beta-agonists), quick-relief medications (such as short-acting beta-agonists), avoidance of triggers (such as allergens, smoke), regular monitoring of symptoms and lung function, development of an asthma action plan, proper inhaler technique, regular follow-up with a healthcare provider, emergency medications (such as oral corticosteroids) as needed",True,True
+D385,Edward Syndrome,"Supportive care, addressing associated medical issues, early intervention programs, palliative care",False,False
+D386,West Nile Virus,"Supportive care, symptom management, prevention of mosquito bites",True,False
+D387,Obesity,"Antifungal medication eg  Amphotericin B, Fluconazole, supportive care",False,True
+D388,Hypertension,"medication, diet change, exercise",False,True
+D389,Sialolithiasis,"Warm compresses, Saliva stimulation, Sialagogues, Stone removal ",False,False
+D390,Hyperopia,"Eyeglasses, contact lenses, refractive surgery",False,False
+D391,Liver Cancer,"Surgery, Radiation therapy, Chemotherapy, Targeted therapy, Immunotherapy, Radiofrequency ablation, Transarterial chemoembolization (TACE), Selective internal radiation therapy (SIRT), Palliative care, Clinical trials",True,True
+D392,Chalazion,"Warm compresses (to help soften and promote drainage of the blocked oil gland), gentle massage of the affected area, eyelid hygiene (keeping the area clean), over-the-counter lubricating eye drops, topical antibiotic ointments (if there is a risk of infection), corticosteroid injections (for larger or persistent chalazia), surgical drainage or excision (in rare cases or if conservative treatments are ineffective)",False,False
+D393,Hypocalcemia,"Calcium and vitamin D supplements, treating underlying causes, intravenous calcium (in severe cases)",False,False
+D394,Viral Warts,"Topical treatments (salicylic acid, cryotherapy), laser therapy, surgical removal, immune therapy (for persistent or recurrent cases)",False,True
+D395,Spondylitis,"Medication (such as nonsteroidal anti-inflammatory drugs, corticosteroids, disease-modifying antirheumatic drugs), physical therapy (including stretching and strengthening exercises), heat or cold therapy, posture correction techniques, lifestyle modifications (such as regular exercise, weight management), assistive devices (such as braces or supports), surgical intervention (in rare cases), pain management techniques (such as acupuncture or transcutaneous electrical nerve stimulation)",True,True
