@@ -47,8 +47,9 @@ This confirms that **collaborative learning works without sharing raw patient da
 ---
 
 ## 👩‍💻 Team
-- **Hatice Kübra Selvi** — Federated Learning & System Architecture  
-- **Seham Hakim Othman** — Blockchain, Smart Contracts, IPFS & Frontend  
+- **Seham Hakim Othman** 
+- **Hatice Kübra Selvi**  
+
 
 ---
 
