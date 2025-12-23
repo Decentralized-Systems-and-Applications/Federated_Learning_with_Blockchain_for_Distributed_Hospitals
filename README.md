@@ -5,4 +5,4 @@ The model predicts only the disease code, while all additional medical informati
 To prepare for federated learning, the dataset was split into three simulated hospital datasets.
 
 This setup establishes a working foundation for the next phase: distributed federated training and blockchain-based model update tracking.
-NEXT STEP IS : improving global model: by using PyTorch + FedAvg (global model = average of local weights each round). 
+NEXT STEP IS : global prediction IS DONE, the next milestone is IPFS + Blockchain !
