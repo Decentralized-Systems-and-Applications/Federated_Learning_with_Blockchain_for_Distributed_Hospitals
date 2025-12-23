@@ -1,42 +1,43 @@
 import sys
 import torch
 from torch.utils.data import DataLoader
-from fl_utils import load_vocab, build_label_map, SymptomsDataset, TextClassifier, set_seed
+from fl_utils import (
+    load_vocab,
+    build_label_map,
+    SymptomsDataset,
+    TextClassifier,
+)
 
-def train_one_client(hospital_id: int, global_path: str, out_path: str, epochs=1, lr=1e-3, batch_size=32):
-    set_seed(42)
-
+def train_client(hospital_id, global_model_path, out_path):
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
-    vocab = load_vocab("vocab.json")
-    label_to_id, _ = build_label_map("SeparatedDataSets")
+    vocab = load_vocab()
+    label_to_id, _ = build_label_map()
 
-    ds = SymptomsDataset(f"SeparatedDataSets/hospital{hospital_id}.csv", vocab, label_to_id)
-    loader = DataLoader(ds, batch_size=batch_size, shuffle=True)
+    dataset = SymptomsDataset(
+        f"../SeparatedDataSets/hospital{hospital_id}.csv",
+        vocab,
+        label_to_id
+    )
 
-    model = TextClassifier(vocab_size=len(vocab), num_classes=len(label_to_id)).to(device)
-    model.load_state_dict(torch.load(global_path, map_location=device))
+    loader = DataLoader(dataset, batch_size=32, shuffle=True)
 
-    opt = torch.optim.Adam(model.parameters(), lr=lr)
+    model = TextClassifier(len(vocab), len(label_to_id)).to(device)
+    model.load_state_dict(torch.load(global_model_path, map_location=device))
+
+    optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     loss_fn = torch.nn.CrossEntropyLoss()
 
     model.train()
-    for _ in range(epochs):
-        for x, y in loader:
-            x, y = x.to(device), y.to(device)
-            opt.zero_grad()
-            logits = model(x)
-            loss = loss_fn(logits, y)
-            loss.backward()
-            opt.step()
+    for x, y in loader:
+        x, y = x.to(device), y.to(device)
+        optimizer.zero_grad()
+        loss_fn(model(x), y).backward()
+        optimizer.step()
 
     torch.save(model.state_dict(), out_path)
-    return len(ds)  # sample count for weighted FedAvg
+    return len(dataset)
 
 if __name__ == "__main__":
-    # Usage: python fl_client.py 2 global.pt hospital2_update.pt
     hid = int(sys.argv[1])
-    global_path = sys.argv[2]
-    out_path = sys.argv[3]
-    n = train_one_client(hid, global_path, out_path)
-    print(f"✅ Hospital {hid} trained. Samples={n}. Saved -> {out_path}")
+    train_client(hid, sys.argv[2], sys.argv[3])
