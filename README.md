@@ -1,8 +1,57 @@
+# 🏥 Federated Learning with Blockchain for Distributed Hospitals
 
-In the current stage, each single-hospital (1,2 and 3) local model training implemented and validated , where a machine learning model learns to predict a disease code from patient symptoms without sharing raw data.
+## 🔍 Overview
+This project implements a **federated learning framework enhanced with blockchain concepts** to enable hospitals to collaboratively train AI models **without sharing patient data**.  
+The system ensures **privacy 🔒, transparency 📊, trust 🤝, and auditability 🧾** in medical AI collaboration.
 
-The model predicts only the disease code, while all additional medical information (disease name, treatments, contagious and chronic status) is retrieved from a separate lookup table.
-To prepare for federated learning, the dataset was split into three simulated hospital datasets.
+---
 
-This setup establishes a working foundation for the next phase: distributed federated training and blockchain-based model update tracking.
-NEXT STEP IS : global prediction is in progress, the next milestone is IPFS + Blockchain !
+## 💡 Motivation
+Healthcare institutions cannot share patient data due to strict privacy regulations, leading to isolated data silos.  
+**Federated Learning** enables decentralized training across hospitals, while **Blockchain** provides a trusted and auditable coordination layer.
+
+> *Bring the AI to the data — not the data to the AI.*
+
+---
+
+## 🧪 Current Project Status (Updated)
+The project has progressed beyond local training and now includes a **working federated learning pipeline** with multiple simulated hospitals.
+
+### ✅ Implemented Features
+- 🏥 **Multiple simulated hospitals**, each training a local model on private data  
+- 🔄 **Federated learning server–client architecture** for model aggregation  
+- 🌐 **Global model generation** after multiple federated rounds  
+- 🧠 Disease prediction based on **patient symptoms only**  
+- 🔢 Model outputs **only a disease code**  
+- 📚 Medical details (disease name, treatments, contagious & chronic status) retrieved from a **separate lookup table**  
+- 🧪 Global model successfully tested using `global_predict.py`
+
+This confirms that **collaborative learning works without sharing raw patient data**.
+
+---
+
+## 🏗️ Architecture Summary
+- Local hospital training (data stays local)
+- Federated aggregation into a global model
+- Metadata lookup separated from prediction logic
+- Blockchain integration planned for secure model update tracking
+
+---
+
+## 🚀 Next Phase
+- 🔗 Blockchain integration for model update verification  
+- 📦 Smart contracts for contribution tracking  
+- 🗂️ IPFS for decentralized storage  
+- 📊 Evaluation of scalability, security, and performance  
+
+---
+
+## 👩‍💻 Team
+- **Seham Hakim Othman** 
+- **Hatice Kübra Selvi**  
+
+
+---
+
+## 🎓 Course
+**CENG 3550 – Decentralized Systems and Applications**
