@@ -8,7 +8,7 @@ The system ensures **privacy 🔒, transparency 📊, trust 🤝, and auditabili
 
 ## 💡 Motivation
 Healthcare institutions cannot share patient data due to strict privacy regulations, leading to isolated data silos.  
-**Federated Learning** enables decentralized training across hospitals, while **Blockchain** provides a trusted and auditable coordination layer.
+**Federated Learning** enables distributed training across hospitals, while **Blockchain** provides a trusted and auditable coordination layer.
 
 > *Bring the AI to the data — not the data to the AI.*
 
@@ -34,7 +34,7 @@ This confirms that **collaborative learning works without sharing raw patient da
 - Local hospital training (data stays local)
 - Federated aggregation into a global model
 - Metadata lookup separated from prediction logic
-- Blockchain integration planned for secure model update tracking
+- Blockchain integration planned for secure track updates of model changes
 
 ---
 
