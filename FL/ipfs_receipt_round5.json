@@ -1,0 +1,8 @@
+{
+  "round": 5,
+  "model_file": "global_round5.pt",
+  "cid": "QmdTnrNoz89GmUfpQHdD1D7SrZSTvGLqSvpu81TnB2cDb6",
+  "sha256": "a7acf6d2768963dfb3605d585648110f2b0f25e22538fe7aaa44a7c15c919211",
+  "storage": "IPFS Desktop (local node)",
+  "description": "Final global federated model"
+}
