@@ -1,0 +1,12 @@
+[
+  {
+    "round": 4,
+    "model": "global_round4.pt",
+    "cid": "QmfC8ZcDsK4hE6fZbooQZG6BWRUY6G2MNDU8yeAZy8jp4T"
+  },
+  {
+    "round": 5,
+    "model": "global_round5.pt",
+    "cid": "QmdTnrNoz89GmUfpQHdD1D7SrZSTvGLqSvpu81TnB2cDb6"
+  }
+]
