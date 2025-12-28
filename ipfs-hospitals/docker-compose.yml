@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  hospital1:
+    image: ipfs/kubo:latest
+    container_name: ipfs_hospital1
+    ports:
+      - "5001:5001"
+      - "8081:8080"
+    volumes:
+      - hospital1_data:/data/ipfs
+    command: daemon --migrate=true
+
+  hospital2:
+    image: ipfs/kubo:latest
+    container_name: ipfs_hospital2
+    ports:
+      - "5002:5001"
+      - "8082:8080"
+    volumes:
+      - hospital2_data:/data/ipfs
+    command: daemon --migrate=true
+
+  hospital3:
+    image: ipfs/kubo:latest
+    container_name: ipfs_hospital3
+    ports:
+      - "5003:5001"
+      - "8083:8080"
+    volumes:
+      - hospital3_data:/data/ipfs
+    command: daemon --migrate=true
+  global: 
+    image: ipfs/kubo:latest
+    container_name: ipfs_global
+    ports:
+      - "5004:5001"
+      - "8084:8080"
+    volumes:
+      - global_data:/data/ipfs
+    command: daemon --migrate=true
+
+volumes:
+  hospital1_data:
+  hospital2_data:
+  hospital3_data:
+  global_data:
