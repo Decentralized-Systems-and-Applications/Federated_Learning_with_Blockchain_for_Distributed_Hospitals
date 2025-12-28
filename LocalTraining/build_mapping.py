@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load my original dataset (the one that includes Name/Treatments/etc.)
-df = pd.read_csv("DatasetHospital1.csv")
+df = pd.read_csv("SeperatedDataSets/GeneralDataset.csv")
 # Keep the mapping columns (this is your "database table")
 mapping = df[["Disease_Code", "Name", "Treatments", "Contagious", "Chronic"]].copy()
 
