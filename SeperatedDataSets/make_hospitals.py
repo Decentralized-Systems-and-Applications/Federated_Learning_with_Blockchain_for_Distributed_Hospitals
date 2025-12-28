@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load original dataset
-df = pd.read_csv("DatasetHospital1.csv")
+df = pd.read_csv("GeneralDataset.csv")
 
 # Keep training columns only
 df = df[["Symptoms", "Disease_Code"]].dropna()
