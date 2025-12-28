@@ -1,7 +1,7 @@
 # 🏥 Federated Learning with Blockchain for Distributed Hospitals
 
 ## 📌 Overview
-This project explores a **privacy-preserving federated learning system** for distributed hospitals, supported by **IPFS** and **blockchain** technologies.  
+This project explores a **privacy-preserving federated learning system** for distributed hospitals, supported by  **IPFS**, **XAI** and **blockchain** technologies.  
 Hospitals collaboratively train a global model while keeping patient data local.
 
 ---
@@ -13,6 +13,7 @@ Hospitals collaboratively train a global model while keeping patient data local.
 - Global model aggregation completed
 - Multiple federated learning rounds executed
 - Global model tested using `global_predict.py`
+- Explainable AI (XAI) is added to make sure the training process is accurate (training the model is black box, in order to understand how the training is done XAI added via `global_explain_lime.py`)
 
 ### 🐳 Infrastructure
 - Docker-based setup for hospitals and services
@@ -54,6 +55,7 @@ Hospitals collaboratively train a global model while keeping patient data local.
 ## 🧰 Technologies Used
 - Python, PyTorch
 - Federated Learning
+- Explainable AI (XAI)
 - IPFS (Kubo, Docker)
 - Ethereum, Solidity, Hardhat
 - Docker & Git
