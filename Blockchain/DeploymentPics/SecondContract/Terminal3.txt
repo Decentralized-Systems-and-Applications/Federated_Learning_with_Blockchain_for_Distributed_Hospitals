@@ -1,0 +1,85 @@
+// terminal 3 for sharing global model updates on chain
+
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1> cd .\Blockchain\
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> npx hardhat run scripts/deploy_model_registry2.js --network localhost
+ModelRegistry2 deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+Assertion failed: !(handle->flags & UV_HANDLE_CLOSING), file src\win\async.c, line 76
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> npx hardhat run scripts/add_hospitals.js --network localhost
+isHospital h1: true
+isHospital h2: true
+isHospital h3: true
+Assertion failed: !(handle->flags & UV_HANDLE_CLOSING), file src\win\async.c, line 76
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> ^C
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> $env:H=2; npx hardhat run scripts/submit_round5.js --network localhost
+Submitted H3 round 5. Tx: 0xa20481df45d45ed9aac5a6a4083e4542062dc017b92fb3277f0b71ff4d1e6ff2
+Assertion failed: !(handle->flags & UV_HANDLE_CLOSING), file src\win\async.c, line 76
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> npx hardhat run scripts/verify_round5.js --network localhost
+Error HH601: Script scripts/verify_round5.js doesn't exist.
+
+For more info go to https://v2.hardhat.org/HH601 or run Hardhat with --show-stack-traces
+PS C                                                            ain>
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> npx hardhat run scripts/verify_round5.js --network localhost
+Submitters: Result(3) [
+  '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266',
+  '0x70997970C51812dc3A010C7d01b50e0d17dc79C8',
+  '0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC'
+]
+H1: Result(4) [
+  'QmPXnt6urEf8hmB3z4Epyt4NFpF13YmD1RHuzYid53rs6S',
+  '0x0000000000000000000000000000000000000000000000000000000000000000',
+  1767031731n,
+  '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266'
+]
+H2: Result(4) [
+  'QmSTk1KCwtEdT8AkDkn8QDfoHU1CH2os1aGAtqntq9sp3U',
+  '0x0000000000000000000000000000000000000000000000000000000000000000',
+  1767031737n,
+  '0x70997970C51812dc3A010C7d01b50e0d17dc79C8'
+]
+H3: Result(4) [
+  'Qmbcgg9ALbRxszuuSW8gHDzzdYWBGcqr7M45oQ2medD7Uq',
+  '0x0000000000000000000000000000000000000000000000000000000000000000',
+  1767031743n,
+  '0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC'
+]
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> docker cp path\to\global_round5.pt ipfs_global:/global_round5.pt
+GetFileAttributesEx C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain\path: The system cannot find the file specified.
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> dir -Recurse -Filter "*global*round5*.pt"
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> dir -Recurse -Filter "*.pt" | Select-String -Pattern "round5|global" -SimpleMatch
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> dir -Recurse -Filter "*.pt"
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> cd FL
+cd : Cannot find path 'C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain\FL' because it does not exist.
+At line:1 char:1
++ cd FL
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\seham\...1\Blockchain\FL:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> cd ..
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1> docker cp "C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\FL\global_round5.pt" ipfs_global:/global_round5.pt
+Successfully copied 366kB to ipfs_global:/global_round5.pt
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1> dir "C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\FL\global_round5.pt"
+
+
+    Directory: C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\FL
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        12/24/2025  11:22 AM         364183 global_round5.pt
+
+
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1> docker exec ipfs_global ipfs add -Q /global_round5.pt
+QmdTnrNoz89GmUfpQHdD1D7SrZSTvGLqSvpu81TnB2cDb6
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1> cd C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> npx hardhat run scripts/publish_global_round5.js --network localhost
+✅ Global model published. Tx: 0x5b0f8cc9b234b40a5b399e217adefb2c7d9f640a9ce02b7392259c7cded76995
+📌 Latest global model:
+Result(5) [
+  5n,
+  'QmdTnrNoz89GmUfpQHdD1D7SrZSTvGLqSvpu81TnB2cDb6',
+  '0x0000000000000000000000000000000000000000000000000000000000000000',
+  1767032461n,
+  '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266'
+]
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\Blockchain> 

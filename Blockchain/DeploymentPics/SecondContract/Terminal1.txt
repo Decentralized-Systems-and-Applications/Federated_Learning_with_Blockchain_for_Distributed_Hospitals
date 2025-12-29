@@ -1,0 +1,80 @@
+//DOCKER TErminal 
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1> cd .\ipfs-hospitals\
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker ps -a
+CONTAINER ID   IMAGE              COMMAND                  CREATED        STATUS                    PORTS                                                                                      NAMES
+7ae25f998ecd   ipfs/kubo:latest   "/sbin/tini -- /usr/…"   27 hours ago   Up 39 minutes (healthy)   0.0.0.0:5001->5001/tcp, [::]:5001->5001/tcp, 0.0.0.0:8081->8080/tcp, [::]:8081->8080/tcp   ipfs_hospital1
+4e6b1473cd8b   ipfs/kubo:latest   "/sbin/tini -- /usr/…"   27 hours ago   Up 39 minutes (healthy)   0.0.0.0:5002->5001/tcp, [::]:5002->5001/tcp, 0.0.0.0:8082->8080/tcp, [::]:8082->8080/tcp   ipfs_hospital2
+e6e61ed8c870   ipfs/kubo:latest   "/sbin/tini -- /usr/…"   27 hours ago   Up 39 minutes (healthy)   0.0.0.0:5004->5001/tcp, [::]:5004->5001/tcp, 0.0.0.0:8084->8080/tcp, [::]:8084->8080/tcp   ipfs_global
+1e31728f0f26   ipfs/kubo:latest   "/sbin/tini -- /usr/…"   27 hours ago   Up 39 minutes (healthy)   0.0.0.0:5003->5001/tcp, [::]:5003->5001/tcp, 0.0.0.0:8083->8080/tcp, [::]:8083->8080/tcp   ipfs_hospital3        
+7115e4bd5333   hello-world        "/hello"                 28 hours ago   Exited (0) 28 hours ago                                             
+                                                 hungry_roentgen       
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals>
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker compose up -d
+time="2025-12-29T20:56:40+03:00" level=warning msg="C:\\Users\\seham\\Desktop\\BC_Project\\LocalModelHospital1\\ipfs-hospitals\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] Running 4/4
+ ✔ Container ipfs_hospital1  Runnin...                            0.0s 
+ ✔ Container ipfs_hospital2  Runnin...                            0.0s 
+ ✔ Container ipfs_global     Running                              0.0s 
+ ✔ Container ipfs_hospital3  Runnin...                            0.0s 
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker ps
+CONTAINER ID   IMAGE              COMMAND                  CREATED        STATUS                    PORTS                                     
+                                                 NAMES
+7ae25f998ecd   ipfs/kubo:latest   "/sbin/tini -- /usr/…"   27 hours ago   Up 42 minutes (healthy)   0.0.0.0:5001->5001/tcp, [::]:5001->5001/tcp, 0.0.0.0:8081->8080/tcp, [::]:8081->8080/tcp   ipfs_hospital1        
+4e6b1473cd8b   ipfs/kubo:latest   "/sbin/tini -- /usr/…"   27 hours ago   Up 42 minutes (healthy)   0.0.0.0:5002->5001/tcp, [::]:5002->5001/tcp, 0.0.0.0:8082->8080/tcp, [::]:8082->8080/tcp   ipfs_hospital2        
+e6e61ed8c870   ipfs/kubo:latest   "/sbin/tini -- /usr/…"   27 hours ago   Up 42 minutes (healthy)   0.0.0.0:5004->5001/tcp, [::]:5004->5001/tcp, 0.0.0.0:8084->8080/tcp, [::]:8084->8080/tcp   ipfs_global
+1e31728f0f26   ipfs/kubo:latest   "/sbin/tini -- /usr/…"   27 hours ago   Up 42 minutes (healthy)   0.0.0.0:5003->5001/tcp, [::]:5003->5001/tcp, 0.0.0.0:8083->8080/tcp, [::]:8083->8080/tcp   ipfs_hospital3        
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> dir
+
+
+    Directory: C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\i 
+    pfs-hospitals
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12/28/2025   7:43 PM                Pics
+-a----        12/28/2025   7:43 PM            934 docker-compose.yml  
+-a----        12/28/2025   7:43 PM             48 model_h1.txt
+
+
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker exec ipfs_hospital1 ipfs pin ls
+QmPXnt6urEf8hmB3z4Epyt4NFpF13YmD1RHuzYid53rs6S recursive
+QmVbJ8hyGhs4mYDEvyQpUjoLbiqp6JbNTW3KbLsNtqAowE indirect
+QmeB4qzdqwefRNpz3J1C6RnyU1mY9ACC41UPX95FYuByx3 indirect
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker exec ipfs_hospital2 ipfs pin ls
+QmfQHTGoLwpwaAjhP3TWKSMqiKn98s9uELHKYYCu3vYZdF indirect
+QmSTk1KCwtEdT8AkDkn8QDfoHU1CH2os1aGAtqntq9sp3U recursive
+QmXjavD6XVe1PwXMyKJUgnSytAk244JdxohnnWH2Z2v7fE indirect
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker exec ipfs_hospital3 ipfs pin ls
+QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn recursive
+QmZaHWgVRykMavuB8zXHhXaHrXVKzPDFPJ8gBVhXCgcfNB indirect
+Qmbcgg9ALbRxszuuSW8gHDzzdYWBGcqr7M45oQ2medD7Uq recursive
+QmdsacJ94QtBaTwrqpgvNqF16BsnRFynM6neMz2jmACa5R indirect
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker exec ipfs_hospital3 ipfs pin ls --type=recursive
+QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn recursive
+Qmbcgg9ALbRxszuuSW8gHDzzdYWBGcqr7M45oQ2medD7Uq recursive
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker exec ipfs_hospital3 ipfs pin ls --type=recursive -q | `
+>> ForEach-Object { docker exec ipfs_hospital3 ipfs pin rm $_ }
+unpinned QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn
+unpinned Qmbcgg9ALbRxszuuSW8gHDzzdYWBGcqr7M45oQ2medD7Uq
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker exec ipfs_hospital3 ipfs repo gc
+removed bafkreifg524ffrb6ij3innsbjmwo3lvxeru5cf37rile7zl6omb2lxv2nq
+removed bafkreihgzowefdq5cj6spniug6kn7hf6ph3xygoekkkp3wydmdqpuu65nq
+removed bafkreigfinzdfje2vu2iaam5fcpz7s45faz5qa4bok2q32ry2v5ha6yn4y    
+removed bafkreidzbojuc6nd4ftw6p35aqhwau7ugzbegku22eq3mt2euh5uw26da4    
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker exec ipfs_hospital3 ipfs pin ls
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker cp FL/h3_round5.pt ipfs_hospital3:/h3_round5.pt
+GetFileAttributesEx C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals\FL: The system cannot find the file specified.       
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker cp ..\FL\h3_round5.pt ipfs_hospital3:/h3_round5.pt
+Successfully copied 366kB to ipfs_hospital3:/h3_round5.pt
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker exec ipfs_hospital3 ipfs add /h3_round5.pt
+added Qmbcgg9ALbRxszuuSW8gHDzzdYWBGcqr7M45oQ2medD7Uq h3_round5.pt
+ 355.67 KiB / 355.67 KiB  100.00%
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> dir ..\FL\h3_round5.pt
+----                 -------------         ------ ----
+-a----        12/24/2025  11:22 AM         364211 h3_round5.pt
+
+
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals> docker exec ipfs_hospital3 ipfs pin ls --type=recursive
+Qmbcgg9ALbRxszuuSW8gHDzzdYWBGcqr7M45oQ2medD7Uq recursive
+PS C:\Users\seham\Desktop\BC_Project\LocalModelHospital1\ipfs-hospitals>
