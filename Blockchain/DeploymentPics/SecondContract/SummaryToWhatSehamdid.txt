@@ -1,0 +1,172 @@
+## Blockchain & Smart Contract Work — Detailed Summary (What Seham Did)
+
+### 1. Smart Contract I Used
+
+I used **only one smart contract** for the whole blockchain part:
+
+* **Contract name:** `ModelRegistry2.sol`
+* **Purpose:**
+  This contract is a **model metadata registry**.
+  It does **not** store model files.
+  It stores **IPFS CIDs + metadata** to track federated learning rounds.
+
+What the contract manages:
+
+* Authorized hospitals
+* Local model submissions per round
+* Global model publication per round
+* Immutable audit trail of who submitted what and when
+
+---
+
+### 2. Contract Deployment
+
+I deployed the `ModelRegistry2` contract to the local blockchain.
+
+* **Contract address:**
+
+  ```
+  0x5FbDB2315678afecb367f032d93F642f64180aa3
+  ```
+
+This address is the **single on-chain source of truth** for all model updates.
+
+---
+
+### 3. Hospital Registration (On-Chain)
+
+After deployment, I registered **three hospitals** so they were allowed to submit models.
+
+Registered hospital addresses:
+
+* Hospital 1
+
+  ```
+  0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+  ```
+* Hospital 2
+
+  ```
+  0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+  ```
+* Hospital 3
+
+  ```
+  0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC
+  ```
+
+After this step:
+
+* Only these addresses could submit local models
+* Unauthorized addresses are rejected by the contract
+
+---
+
+### 4. Local Model Submissions (Round 5)
+
+Each hospital trained a **local model**, uploaded it to IPFS, and then submitted the **CID on-chain** for **round 5**.
+
+What was stored on-chain for each submission:
+
+* Round number
+* IPFS CID of the local model
+* Timestamp
+* Hospital address
+
+#### Round 5 — Local Model CIDs
+
+* **Hospital 1 local model CID**
+
+  ```
+  QmPXnt6urEf8hmB3z4Epyt4NFpF13YmD1RHuzYid53rs6S
+  ```
+
+* **Hospital 2 local model CID**
+
+  ```
+  QmSTk1KCwtEdT8AkDkn8QDfoHU1CH2os1aGAtqntq9sp3U
+  ```
+
+* **Hospital 3 local model CID**
+
+  ```
+  Qmbcgg9ALbRxszuuSW8gHDzzdYWBGcqr7M45oQ2medD7Uq
+  ```
+
+At this point:
+
+* The blockchain had **three verified local submissions**
+* Each submission was immutable and traceable to a hospital
+
+---
+
+### 5. Verification of Local Submissions
+
+I queried the contract to confirm:
+
+* All three hospitals submitted for round 5
+* Each CID is correctly associated with the correct hospital
+
+The contract returned:
+
+* A list of submitters
+* Full metadata (CID, timestamp, sender address)
+
+This confirms the **federated round was complete**.
+
+---
+
+### 6. Global Model Publication (Round 5)
+
+After aggregation was done **off-chain**, I uploaded the **global model** to IPFS and stored its CID on-chain.
+
+* **Global model CID (Round 5):**
+
+  ```
+  QmdTnrNoz89GmUfpQHdD1D7SrZSTvGLqSvpu81TnB2cDb6
+  ```
+
+I then published this CID using the contract, linking it to:
+
+* Round number: **5**
+* Publisher address
+* Timestamp
+
+---
+
+### 7. What Is Stored On-Chain (Important)
+
+The blockchain stores **only metadata**, never model files:
+
+Stored on-chain:
+
+* IPFS CIDs (local + global)
+* Hospital Ethereum addresses
+* Round numbers
+* Timestamps
+
+Not stored on-chain:
+
+* Model weights
+* Medical data
+* Any large files
+
+This keeps the system:
+
+* Efficient
+* Privacy-preserving
+* Auditable
+
+---
+
+### 8. Final On-Chain State (End Result)
+
+After all steps, the blockchain contains:
+
+* ✅ One deployed contract (`ModelRegistry2`)
+* ✅ Three authorized hospitals
+* ✅ Three local model CIDs for round 5
+* ✅ One global model CID for round 5
+* ✅ Full immutable history of the training round
+
+---
