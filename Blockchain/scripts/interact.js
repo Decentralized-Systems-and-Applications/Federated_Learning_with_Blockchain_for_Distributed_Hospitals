@@ -1,12 +1,28 @@
 const hre = require("hardhat");
+const fs = require("fs");
+const path = require("path");
 
 /**
  * Example interaction script with the ModelUpdateTracker contract
  * This demonstrates how to register hospitals and submit model updates
  */
 async function main() {
-  // Contract address (update this after deployment)
-  const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS || "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  // Load contract address from deployment_info.json or environment variable
+  const deploymentPath = path.join(__dirname, "..", "deployment_info.json");
+  let CONTRACT_ADDRESS;
+  
+  if (process.env.CONTRACT_ADDRESS) {
+    CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
+    console.log("📋 Using contract from environment:", CONTRACT_ADDRESS);
+  } else if (fs.existsSync(deploymentPath)) {
+    const deploymentInfo = JSON.parse(fs.readFileSync(deploymentPath, "utf8"));
+    CONTRACT_ADDRESS = deploymentInfo.contractAddress;
+    console.log("📋 Using contract from deployment_info.json:", CONTRACT_ADDRESS);
+  } else {
+    console.error("❌ Contract address not found!");
+    console.error("   Either set CONTRACT_ADDRESS environment variable or run deploy.js first");
+    process.exit(1);
+  }
 
   console.log("Connecting to ModelUpdateTracker contract at:", CONTRACT_ADDRESS);
 
@@ -19,7 +35,7 @@ async function main() {
 
   console.log("\n📋 Contract Info:");
   console.log("Owner:", await contract.owner());
-  console.log("Current Round:", await contract.currentRound());
+  console.log("Current Round:", (await contract.currentRound()).toString());
   console.log("Registered Hospitals:", await contract.getRegisteredHospitalsCount());
 
   // Example: Register hospitals (only owner can do this)
