@@ -15,29 +15,25 @@ Hospitals collaboratively train a global model while keeping patient data local.
 - Global model tested using `global_predict.py`
 - Explainable AI (XAI) is added to make sure the training process is accurate (training the model is black box, in order to understand how the training is done XAI added via `global_explain_lime.py`)
 
-### 🐳 Infrastructure
+### 🐳📦 IPFS (Docker + Kubo)
 - Docker-based setup for hospitals and services
 - Isolated environments for reproducibility
+- IPFS nodes running inside Docker containers
+- Model files can be added and retrieved manually
+- **IPFS integration is fully automated now**
+- **Kubo-related behavior are understood.**
+- CID management and synchronization between nodes is done.
 
 ### ⛓️ Blockchain (Hardhat)
 - Local Ethereum network running with Hardhat
 - Smart contracts successfully deployed
 - Model update logic prepared on-chain
+- Contract is written and deployed to make sure autherized hospitals only participate
 
 ---
 
 ## 🚧 Currently Working On
-
-### 📦 IPFS (Docker + Kubo)
-- IPFS nodes running inside Docker containers
-- Model files can be added and retrieved manually
-- **IPFS integration not fully automated yet**
-- **Kubo-related behavior still under investigation**
-- CID management and synchronization between nodes is ongoing
-
-### 🔗 Blockchain ↔ IPFS Integration
-- Smart contracts are deployed and functional
-- **IPFS CIDs are not yet automatically recorded on-chain**
+- **IPFS & Blockchain**
 - Blockchain–IPFS linkage is currently under development
 - Contract logic is being refined to support CID updates per FL round
 
