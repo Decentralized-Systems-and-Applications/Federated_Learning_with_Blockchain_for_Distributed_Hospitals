@@ -10,17 +10,17 @@ The following screens represent the web dashboard used to manage the federated l
 
 | **Overview & Analytics** | **Model Management** |
 |:---:|:---:|
-| ![Overview](/UI_ScreensOfWebDashBoard/Overview_pageUI.png) | ![Model Management](./UI_ScreensOfWebDashboard/ModelManagement_pageUI.png) |
+| ![Overview](/UI_ScreensOfWebDashBoard/Overview_pageUI.png) | ![Model Management](/UI_ScreensOfWebDashBoard/ModelManagement_pageUI.png) |
 | *High-level system health and metrics.* | *Tracking FL rounds and aggregation.* |
 
 | **Hospital Management** | **Diagnosis Support** |
 |:---:|:---:|
-| ![Hospital Management](./UI_ScreensOfWebDashboard/HospitalManagement_pageUI.png) | ![Diagnosis](./UI_ScreensOfWebDashboard/DiagnosisSupport_pageUI.png) |
+| ![Hospital Management](/UI_ScreensOfWebDashBoard/HospitalManagement_pageUI.png) | ![Diagnosis](/UI_ScreensOfWebDashBoard/DiagnosisSupport_pageUI.png) |
 | *Node monitoring and local logs.* | *Clinical AI-assisted diagnostics.* |
 
 | **Security & Traceability** |
 |:---:|
-| ![Security](./UI_ScreensOfWebDashboard/Security&Tracibility_pageUI.png) |
+| ![Security](/UI_ScreensOfWebDashBoard/Security&Tracibility_pageUI.png) |
 | *Blockchain verification and IPFS CID history.* |
 
 ---
