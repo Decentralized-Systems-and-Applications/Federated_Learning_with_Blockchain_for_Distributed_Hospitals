@@ -10,7 +10,7 @@ The following screens represent the web dashboard used to manage the federated l
 
 | **Overview & Analytics** | **Model Management** |
 |:---:|:---:|
-| ![Overview](./UI_ScreensOfWebDashboard/Overview_pageUI.png) | ![Model Management](./UI_ScreensOfWebDashboard/ModelManagement_pageUI.png) |
+| ![Overview](/UI_ScreensOfWebDashBoard/Overview_pageUI.png) | ![Model Management](./UI_ScreensOfWebDashboard/ModelManagement_pageUI.png) |
 | *High-level system health and metrics.* | *Tracking FL rounds and aggregation.* |
 
 | **Hospital Management** | **Diagnosis Support** |
