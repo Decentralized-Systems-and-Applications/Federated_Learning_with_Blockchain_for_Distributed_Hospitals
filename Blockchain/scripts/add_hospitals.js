@@ -1,5 +1,13 @@
 const hre = require("hardhat");
 
+/**
+ * This script configures my "authorized list." In my contract, the onlyHospital modifier prevents random people from submitting models.
+
+What it does: It takes the first three accounts provided by Hardhat (h1, h2, h3) and marks them as true in the isHospital mapping.
+
+Terminal Output: When you see isHospital h1: true, it means the blockchain has successfully saved that Account #0 is now an authorized hospital.
+ */
+
 async function main() {
   const CONTRACT = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // Update with your deployed contract address
   const registry = await hre.ethers.getContractAt("ModelRegistry2", CONTRACT);

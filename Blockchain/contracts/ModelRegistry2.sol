@@ -7,6 +7,9 @@ pragma solidity ^0.8.20;
  * - Aggregator publishes the global model CID per round
  * - Stores only metadata (CID + hash) on-chain, not the model itself
  */
+
+
+ // result after running this code : The contract was assigned a specific address ON BLOCKCHAIN :
 contract ModelRegistry2 {
     // --- roles ---
     address public owner;
@@ -45,22 +48,22 @@ contract ModelRegistry2 {
     event AggregatorChanged(address aggregator);
     event RequiredSubmissionsChanged(uint256 required);
 
-    event LocalUpdateSubmitted(
+    event LocalUpdateSubmitted(     // hospital says i have submitted my local update!
         uint256 indexed round,
         address indexed hospital,
         string cid,
         bytes32 fileHash
     );
 
-    event GlobalModelPublished(
+    event GlobalModelPublished( // The Aggregator (global model) calls this after collecting enough hospital updates. It says: "Here is the new averaged Global Model for Round 1.
         uint256 indexed round,
         address indexed publisher,
         string cid,
         bytes32 fileHash
     );
 
-    // --- modifiers ---
-    modifier onlyOwner() {
+    // --- modifiers --- TO CHECk people who can call certain functions
+    modifier onlyOwner() { 
         require(msg.sender == owner, "Not owner");
         _;
     }

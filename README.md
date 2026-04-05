@@ -5,7 +5,25 @@ This project explores a **privacy-preserving federated learning system** for dis
 Hospitals collaboratively train a global model while keeping patient data local.
 
 ---
+## 🖥️ User Interface (Dashboard)
+The following screens represent the web dashboard used to manage the federated learning lifecycle, monitor hospital nodes, and verify blockchain transactions.
 
+| **Overview & Analytics** | **Model Management** |
+|:---:|:---:|
+| ![Overview](./UI_ScreensOfWebDashboard/Overview_pageUI.png) | ![Model Management](./UI_ScreensOfWebDashboard/ModelManagement_pageUI.png) |
+| *High-level system health and metrics.* | *Tracking FL rounds and aggregation.* |
+
+| **Hospital Management** | **Diagnosis Support** |
+|:---:|:---:|
+| ![Hospital Management](./UI_ScreensOfWebDashboard/HospitalManagement_pageUI.png) | ![Diagnosis](./UI_ScreensOfWebDashboard/DiagnosisSupport_pageUI.png) |
+| *Node monitoring and local logs.* | *Clinical AI-assisted diagnostics.* |
+
+| **Security & Traceability** |
+|:---:|
+| ![Security](./UI_ScreensOfWebDashboard/Security&Tracibility_pageUI.png) |
+| *Blockchain verification and IPFS CID history.* |
+
+---
 ## ✅ Completed Components
 
 ### 🧠 Federated Learning
