@@ -25,6 +25,14 @@ The following screens represent the web dashboard used to manage the federated l
 
 --- 
 
+
+## 🧱 System Structure:
+![](/UI_ScreensOfWebDashBoard/SystemStructure.png)
+
+
+
+---
+
 ## 🎥 Project Demo (Prototype)
 > ### ⏳ Coming Very Soon!
 ---
