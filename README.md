@@ -1,37 +1,32 @@
-# 🏥 Federated Learning with Blockchain for Distributed Hospitals
+# 🏥 Decentralized Federated Learning with Blockchain for Distributed Hospitals
 
 ## 📌 Overview
-This project explores a **privacy-preserving federated learning system** for distributed hospitals, supported by  **IPFS**, **XAI** and **blockchain** technologies.  
-Hospitals collaboratively train a global model while keeping patient data local.
-
+This project explores a **privacy-preserving decentralized federated learning system** where hospitals collaboratively train local models while keeping patient data on-site, with a smart contract (Orchestrator) coordinating and validating the aggregation process.
 ---
 ## 🖥️ User Interface (Dashboard)
 The following screens represent the web dashboard used to manage the federated learning lifecycle, monitor hospital nodes, and verify blockchain transactions.
 
 | **Overview & Analytics** | **Model Management** |
 |:---:|:---:|
-| ![Overview](/UI_ScreensOfWebDashBoard/Overview_pageUI.png) | ![Model Management](/UI_ScreensOfWebDashBoard/ModelManagement_pageUI.png) |
+| ![Overview](/UI_ScreensOfWebDashBoard/Overview%20Dashboard%20Page.png) | ![Model Management](/UI_ScreensOfWebDashBoard/Model%20Management%20Console.png) |
 | *High-level system health and metrics.* | *Tracking FL rounds and aggregation.* |
 
 | **Hospital Management** | **Diagnosis Support** |
 |:---:|:---:|
-| ![Hospital Management](/UI_ScreensOfWebDashBoard/HospitalManagement_pageUI.png) | ![Diagnosis](/UI_ScreensOfWebDashBoard/DiagnosisSupport_pageUI.png) |
+| ![Hospital Management](/UI_ScreensOfWebDashBoard/Doctor%20Console%20Page.png) | ![Diagnosis](/UI_ScreensOfWebDashBoard/Diagnosis%20Support%20Tool%20Page.png) |
 | *Node monitoring and local logs.* | *Clinical AI-assisted diagnostics.* |
 
 | **Security & Traceability** |
 |:---:|
-| ![Security](/UI_ScreensOfWebDashBoard/Security&Tracibility_pageUI.png) |
+| ![Security](/UI_ScreensOfWebDashBoard/Security%20&%20Traceability%20Page.png) |
 | *Blockchain verification and IPFS CID history.* |
 
 --- 
 
+## 🧠 How the System Works?
+![](/UI_ScreensOfWebDashBoard/HowSystemWorks.jpeg)
 
-## 🧱 System Structure:
-![](/UI_ScreensOfWebDashBoard/SystemStructure.png)
-
-
-
----
+--- 
 
 ## 🎥 Project Demo (Prototype)
 > ### ⏳ Coming Very Soon!
@@ -63,10 +58,10 @@ The following screens represent the web dashboard used to manage the federated l
 ---
 
 ## 🚧 Currently Working On
-- **IPFS & Blockchain**
-- Blockchain–IPFS linkage is currently under development
-- Contract logic is being refined to support CID updates per FL round
-
+- **Decentralization**
+- Full decentralization (removing central server/global model)
+- Monitoring network traffic and model size
+- Encrypting model updates before sharing
 ---
 
 ## 🏗️ Architecture Summary
@@ -80,19 +75,14 @@ The following screens represent the web dashboard used to manage the federated l
 
 ## 🧰 Technologies Used
 - Python, PyTorch
-- Federated Learning
+- Federated Learning (FedAvg)
 - Explainable AI (XAI)
-- IPFS (Kubo, Docker)
-- Ethereum, Solidity, Hardhat
-- Docker & Git
+- IPFS 
+- Private Blcokchain Network legder
+- Git
 
 ---
 
 ## 👩‍💻 Team
 - Seham Hakim Othman  
 - Hatice Kübra Selvi  
-
----
-
-## 🎓 Course
-**CENG 3550 – Decentralized Systems and Applications**
