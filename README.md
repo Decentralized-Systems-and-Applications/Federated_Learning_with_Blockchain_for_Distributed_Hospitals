@@ -66,15 +66,6 @@ The following screens represent the web dashboard used to manage the federated l
 
 ---
 
-## 🏗️ Architecture Summary
-- Hospitals train local models on private data
-- Only model updates are shared
-- Large model files intended to be stored on IPFS
-- Blockchain intended to record and verify model updates
-- Raw patient data never leaves hospitals
-
----
-
 ## 🧰 Technologies Used
 - Python, PyTorch
 - Federated Learning (FedAvg)
@@ -82,6 +73,13 @@ The following screens represent the web dashboard used to manage the federated l
 - IPFS 
 - Private Blcokchain Network legder
 - Git
+
+---
+
+## 🔮 Future Work
+- Enhance the Keyway Orchestrator with advanced on-chain validation logic.
+- Improve privacy through stronger encryption of model updates.
+- Make the model more robust against adversarial attacks and other AI-based threats.
 
 ---
 
