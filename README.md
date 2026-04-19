@@ -5,10 +5,13 @@ This project explores a **privacy-preserving decentralized federated learning sy
 
 ---
 
-## **📚 MedXChAln Information Hub **
-See it to believe it! explore how MedXChAln transforms healthcare AI through decentralized intelligence.
+## 📚 MedXChAln Information Hub 
+**See it to believe it!** explore how MedXChAln transforms healthcare AI through decentralized intelligence.
 👉 [Open Information Hub](https://github.com/Decentralized-Systems-and-Applications/MedXChAln-InfoHub)
 
+<a href="https://github.com/Decentralized-Systems-and-Applications/MedXChAln-InfoHub">
+  <img src="https://img.shields.io/badge/Open-Information%20Hub-blue?style=for-the-badge&logo=github" />
+</a>
 ---
 
 ## 🖥️ User Interface (Dashboard)
