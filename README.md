@@ -63,6 +63,7 @@ The following screens represent the web dashboard used to manage the federated l
 - Full decentralization (removing central server/global model)
 - Monitoring network traffic and model size
 - Encrypting model updates before sharing
+
 ---
 
 ## 🏗️ Architecture Summary
