@@ -1,7 +1,8 @@
 # 🏥 Decentralized Federated Learning with Blockchain for Distributed Hospitals
 
-## 📌 Overview
+## 📌 Overview 
 This project explores a **privacy-preserving decentralized federated learning system** where hospitals collaboratively train local models while keeping patient data on-site, with a smart contract (Orchestrator) coordinating and validating the aggregation process.
+
 ---
 ## 🖥️ User Interface (Dashboard)
 The following screens represent the web dashboard used to manage the federated learning lifecycle, monitor hospital nodes, and verify blockchain transactions.
