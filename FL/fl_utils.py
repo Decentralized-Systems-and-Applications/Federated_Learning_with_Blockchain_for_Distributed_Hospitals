@@ -5,22 +5,35 @@ import pandas as pd
 from torch.utils.data import Dataset
 from pathlib import Path
 
-DATA_DIR = Path("..") / "SeperatedDataSets"
+import re
+import json
+import torch
+import pandas as pd
+from torch.utils.data import Dataset
+from pathlib import Path
 
+# --- 1. DEFINE PATHS FIRST ---
+# This goes up one level from FL/ to project root, then into LocalTraining/SeparatedDataSets
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "LocalTraining" / "SeparatedDataSets"
+
+# --- 2. DEFINE FUNCTIONS ---
 def tokenize(text):
     text = text.lower()
     text = re.sub(r"[^a-z0-9\s]", " ", text)
     return [t for t in text.split() if t]
 
 def load_vocab():
+    # Make sure vocab.json is in the FL folder
     return json.loads(Path("vocab.json").read_text())
 
-def build_label_map(): # disease code to ID mapping (the model can understand!)
+def build_label_map():
     labels = set()
     for i in [1, 2, 3]:
+        # Using the DATA_DIR defined above
         df = pd.read_csv(DATA_DIR / f"hospital{i}.csv")
         labels.update(df["Disease_Code"].astype(str).dropna().tolist())
-
+    
     labels = sorted(labels)
     label_to_id = {l: i for i, l in enumerate(labels)}
     id_to_label = {i: l for l, i in label_to_id.items()}
