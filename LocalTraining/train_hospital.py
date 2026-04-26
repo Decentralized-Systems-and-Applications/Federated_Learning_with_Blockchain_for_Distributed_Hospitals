@@ -18,7 +18,8 @@ def main():
     hospital_id = sys.argv[1].strip()
 
     # Folder name must match your real folder
-    data_path = Path("SeperatedDataSets") / f"hospital{hospital_id}.csv"
+    base_path = Path(__file__).resolve().parent
+    data_path = base_path / "SeparatedDataSets" / f"hospital{hospital_id}.csv"
     model_path = Path(f"hospital{hospital_id}_model.joblib")
 
     if not data_path.exists():
