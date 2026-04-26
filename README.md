@@ -26,7 +26,7 @@ The following screens represent the web dashboard used to manage the federated l
 
 | **Hospital Management** | **Diagnosis Support** |
 |:---:|:---:|
-| ![Hospital Management](/UI-DashBoard/Doctor%20Console%20Page.png) | ![Diagnosis](/UI_ScreensOfWebDashBoard/Diagnosis%20Support%20Tool%20Page.png) |
+| ![Hospital Management](/UI-DashBoard/Doctor%20Console%20Page.png) | ![Diagnosis](/UI-DashBoard/Diagnosis%20Support%20Tool%20Page.png) |
 | *Node monitoring and local logs.* | *Clinical AI-assisted diagnostics.* |
 
 | **Security & Traceability** |
