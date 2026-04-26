@@ -21,23 +21,23 @@ The following screens represent the web dashboard used to manage the federated l
 
 | **Overview & Analytics** | **Model Management** |
 |:---:|:---:|
-| ![Overview](/UI_ScreensOfWebDashBoard/Overview%20Dashboard%20Page.png) | ![Model Management](/UI_ScreensOfWebDashBoard/Model%20Management%20Console.png) |
+| ![Overview](/UI-DashBoard/Overview%20Dashboard%20Page.png) | ![Model Management](/UI-DashBoard/Model%20Management%20Console.png) |
 | *High-level system health and metrics.* | *Tracking FL rounds and aggregation.* |
 
 | **Hospital Management** | **Diagnosis Support** |
 |:---:|:---:|
-| ![Hospital Management](/UI_ScreensOfWebDashBoard/Doctor%20Console%20Page.png) | ![Diagnosis](/UI_ScreensOfWebDashBoard/Diagnosis%20Support%20Tool%20Page.png) |
+| ![Hospital Management](/UI-DashBoard/Doctor%20Console%20Page.png) | ![Diagnosis](/UI_ScreensOfWebDashBoard/Diagnosis%20Support%20Tool%20Page.png) |
 | *Node monitoring and local logs.* | *Clinical AI-assisted diagnostics.* |
 
 | **Security & Traceability** |
 |:---:|
-| ![Security](/UI_ScreensOfWebDashBoard/Security%20&%20Traceability%20Page.png) |
+| ![Security](/UI-DashBoard/Security%20&%20Traceability%20Page.png) |
 | *Blockchain verification and IPFS CID history.* |
 
 --- 
 
 ## 🧠 How the System Works?
-![](/UI_ScreensOfWebDashBoard/HowSystemWorks.jpeg)
+![](/UI-DashBoard/HowSystemWorks.jpeg)
 
 --- 
 
