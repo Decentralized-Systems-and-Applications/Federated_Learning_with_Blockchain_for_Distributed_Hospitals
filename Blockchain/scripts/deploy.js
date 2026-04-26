@@ -1,50 +1,46 @@
 const hre = require("hardhat");
+const fs = require("fs");
+const path = require("path");
 
 async function main() {
-  console.log("Deploying ModelUpdateTracker contract...");
+  const REQUIRED_SUBMISSIONS = 3;
 
-  // Get the contract factory
-  const ModelUpdateTracker = await hre.ethers.getContractFactory("ModelUpdateTracker");
+  console.log("🚀 Deploying ModelUpdateTracker...");
 
-  // Deploy the contract
-  const modelTracker = await ModelUpdateTracker.deploy();
+  const ModelUpdateTracker =
+    await hre.ethers.getContractFactory("ModelUpdateTracker");
 
-  // Wait for deployment to be mined
-  await modelTracker.waitForDeployment();
+  const contract =
+    await ModelUpdateTracker.deploy(REQUIRED_SUBMISSIONS);
 
-  const contractAddress = await modelTracker.getAddress();
-  console.log("✅ ModelUpdateTracker deployed to:", contractAddress);
-  console.log("📝 Contract owner:", await modelTracker.owner());
-  console.log("🔢 Current round:", (await modelTracker.currentRound()).toString());
+  await contract.waitForDeployment();
 
-  // Save deployment info to file
-  const deploymentInfo = {
-    contractAddress: contractAddress,
-    owner: await modelTracker.owner(),
+  const address = await contract.getAddress();
+  const owner = await contract.owner();
+  const round = await contract.currentRound();
+
+  console.log("✅ Contract deployed");
+  console.log("📍 Address:", address);
+  console.log("👤 Owner / Aggregator:", owner);
+  console.log("🔢 Current round:", round.toString());
+
+  const info = {
+    address,
+    owner,
+    requiredSubmissions: REQUIRED_SUBMISSIONS,
     network: hre.network.name,
-    deployedAt: new Date().toISOString(),
-    currentRound: (await modelTracker.currentRound()).toString()
+    deployedAt: new Date().toISOString()
   };
 
-  const fs = require("fs");
-  const path = require("path");
-  const deploymentPath = path.join(__dirname, "..", "deployment_info.json");
-  fs.writeFileSync(deploymentPath, JSON.stringify(deploymentInfo, null, 2));
-  console.log("\n💾 Deployment info saved to:", deploymentPath);
+  const outPath = path.join(__dirname, "..", "deployment_info.json");
+  fs.writeFileSync(outPath, JSON.stringify(info, null, 2));
 
-  console.log("\n📋 Deployment Summary:");
-  console.log("  Network:", hre.network.name);
-  console.log("  Contract Address:", contractAddress);
-  console.log("\n🚀 Next steps:");
-  console.log("  1. Register hospitals: npx hardhat run scripts/interact.js");
-  console.log("  2. Start IPFS node or docker-compose (in ipfs-hospitals/)");
-  console.log("  3. Upload models: node scripts/upload_to_ipfs_and_register.js <contract> <file> <round> <hospital>");
+  console.log("💾 deployment_info.json written");
 }
 
-// Execute deployment
 main()
   .then(() => process.exit(0))
-  .catch((error) => {
-    console.error("❌ Deployment failed:", error);
+  .catch((err) => {
+    console.error("❌ Deploy failed:", err);
     process.exit(1);
   });
