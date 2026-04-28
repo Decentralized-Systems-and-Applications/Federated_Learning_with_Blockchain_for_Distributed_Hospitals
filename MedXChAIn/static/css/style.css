@@ -353,6 +353,8 @@ body {
   border-radius: 16px;
   padding: 26px 26px 18px;
   border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
 }
 
 .chart-header {
@@ -360,6 +362,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 20px;
+  flex-shrink: 0;
 }
 
 .chart-title { font-size: 17px; font-weight: 800; color: var(--text); margin-bottom: 3px; }
@@ -381,10 +384,20 @@ body {
 
 .tab-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
 
-.chart-area { height: 220px; position: relative; margin-bottom: 8px; }
+.chart-area {
+  height: auto;
+  flex: 1;
+  min-height: clamp(300px, 40vh, 460px);
+  position: relative;
+}
 .chart-area svg { width: 100%; height: 100%; }
 .chart-area canvas { width: 100% !important; height: 100% !important; }
-.epoch-labels { display: flex; justify-content: space-between; }
+.epoch-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  flex-shrink: 0;
+}
 .epoch-label  { font-size: 10px; color: var(--muted); font-weight: 600; }
 
 /* Right panel */
