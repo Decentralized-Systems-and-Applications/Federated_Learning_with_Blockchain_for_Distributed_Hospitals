@@ -209,17 +209,30 @@ body {
 .topbar-actions { display: flex; gap: 10px; align-items: center; }
 
 .icon-btn {
-  background: none;
-  border: none;
+  background: #eef4ff;
+  border: 1px solid #dbeafe;
   cursor: pointer;
   font-size: 18px;
   padding: 6px;
   border-radius: 8px;
   position: relative;
-  transition: background 0.15s;
+  color: var(--blue);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
 
-.icon-btn:hover { background: var(--bg); }
+.icon-btn i { color: currentColor; }
+
+.icon-btn:hover {
+  background: #dbeafe;
+  border-color: #bfdbfe;
+}
+
+.icon-btn:active { background: #bfdbfe; }
+
+.icon-btn:focus-visible {
+  outline: 2px solid rgba(26, 86, 219, 0.35);
+  outline-offset: 2px;
+}
 
 .notif-dot {
   position: absolute;
