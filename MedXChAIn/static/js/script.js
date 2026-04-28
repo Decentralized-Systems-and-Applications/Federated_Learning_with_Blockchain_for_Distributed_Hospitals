@@ -240,7 +240,7 @@ window.setActive = setActive;
 window.refreshDashboard = refreshDashboard;
 
 // Global Distribution Map
-(async function initMap() {
+async function initMap() {
   const canvas = document.getElementById('mapCanvas');
   if (!canvas) return;
   
@@ -275,12 +275,18 @@ window.refreshDashboard = refreshDashboard;
     function drawMap() {
       ctx.clearRect(0, 0, W, H);
 
+      // Ocean/background (light gray like the mock)
+      ctx.fillStyle = '#e5e7eb';
+      ctx.fillRect(0, 0, W, H);
+
       countries.features.forEach(f => {
         ctx.beginPath();
         path(f);
-        ctx.fillStyle = '#2d5986';
+        // Land (slightly darker gray)
+        ctx.fillStyle = '#9ca3af';
         ctx.fill();
-        ctx.strokeStyle = '#64748b';
+        // Borders (subtle)
+        ctx.strokeStyle = '#cbd5e1';
         ctx.lineWidth = 0.5;
         ctx.stroke();
       });
@@ -319,4 +325,4 @@ window.refreshDashboard = refreshDashboard;
     ctx.textAlign = 'center';
     ctx.fillText('Map loading failed', W / 2, H / 2);
   }
-})();
+}

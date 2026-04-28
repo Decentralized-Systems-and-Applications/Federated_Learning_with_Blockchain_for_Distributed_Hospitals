@@ -28,7 +28,7 @@ body {
 
 /* ── SIDEBAR ── */
 .sidebar {
-  width: 220px;
+  width: 252px;
   min-height: 100vh;
   background: var(--white);
   border-right: 1px solid var(--border);
@@ -38,18 +38,17 @@ body {
 }
 
 .sidebar-logo {
-  padding: 20px 24px;
-  border-bottom: 1px solid var(--border);
+  padding: 18px 22px 14px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
 .logo-icon {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   background: var(--light-blue);
-  border-radius: 10px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,24 +64,23 @@ body {
 }
 
 .sidebar-user {
-  padding: 16px 24px;
+  padding: 14px 22px 18px;
   display: flex;
   align-items: center;
   gap: 12px;
-  border-bottom: 1px solid var(--border);
 }
 
 .avatar {
-  width: 60px;
-  height: 60px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: #e2e8f0;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 3px solid #4da8da;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 0.15);
+  border: 2px solid #dbeafe;
+  box-shadow: 0 6px 18px rgba(15, 31, 61, 0.08);
   font-size: 16px;
   flex-shrink: 0;
 }
@@ -94,50 +92,60 @@ body {
   display: block;
 }
 
-.user-name { font-weight: 700; font-size: 13px; color: var(--text); }
+.user-name { font-weight: 800; font-size: 13px; color: var(--text); }
 .user-role { font-size: 12px; color: var(--muted); }
 
-.nav { flex: 1; padding: 10px 12px; overflow-y: auto; }
+.nav { flex: 1; padding: 8px 14px; overflow-y: auto; }
 
 .nav-item {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 9px 12px;
-  border-radius: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
   border: none;
   cursor: pointer;
   background: transparent;
   color: var(--muted);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   text-align: left;
   font-family: var(--font);
   transition: all 0.15s;
 }
 
-.nav-item:hover { background: var(--accent); color: var(--text); }
-.nav-item.active { background: var(--accent); color: var(--blue); font-weight: 700; }
+.nav-item:hover { background: #f6f8ff; color: var(--text); }
+.nav-item.active {
+  background: #eef4ff;
+  color: var(--blue);
+  font-weight: 800;
+}
 .nav-icon { 
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    width: 18px;
+    font-size: 16px;
+    width: 28px;
+    height: 28px;
+    border-radius: 10px;
+    background: #f3f6ff;
     text-align: center;
     vertical-align: middle;
+    color: #475569;
 }
+.nav-item.active .nav-icon { background: #dbeafe; color: var(--blue); }
+.nav-item:hover .nav-icon { background: #eaf0ff; color: #334155; }
 
-.sidebar-bottom { padding: 10px 12px; }
+.sidebar-bottom { padding: 8px 14px 10px; margin-top: auto; }
 
 .status-badge {
   margin: 12px;
   padding: 12px;
-  border-radius: 8px;
-  background: var(--green-bg);
-  border: 1px solid var(--green-border);
+  border-radius: 12px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
 }
 
 .status-title {
@@ -147,7 +155,7 @@ body {
   margin-bottom: 4px;
   font-size: 10px;
   font-weight: 700;
-  color: var(--green-text);
+  color: var(--blue);
   letter-spacing: 0.5px;
 }
 
@@ -155,11 +163,11 @@ body {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--green);
+  background: var(--blue);
   flex-shrink: 0;
 }
 
-.status-desc { font-size: 11px; color: #166534; line-height: 1.4; }
+.status-desc { font-size: 11px; color: #475569; line-height: 1.4; }
 
 /* ── MAIN ── */
 .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
@@ -225,7 +233,7 @@ body {
 }
 
 .export-btn {
-  background: var(--navy);
+  background: var(--blue);
   color: #fff;
   border: none;
   cursor: pointer;
@@ -429,9 +437,10 @@ body {
 .map-wrap {
   border-radius: 8px;
   overflow: hidden;
-  background: #1e3a5f;
+  background: #eef2f7;
   position: relative;
   height: 160px;
+  border: 1px solid var(--border);
 }
 
 .map-wrap canvas {
@@ -441,17 +450,18 @@ body {
 }
 .live-label {
   position: absolute;
-  bottom: 8px;
+  bottom: 10px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background: var(--light-blue);
   color: #fff;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
-  padding: 3px 10px;
+  padding: 7px 14px;
   border-radius: 20px;
   letter-spacing: 1px;
   white-space: nowrap;
+  box-shadow: 0 10px 22px rgba(15, 31, 61, 0.18);
 }
 
 /* ── SESSIONS ── */
