@@ -32,10 +32,17 @@ function initializePerformanceChart() {
 
   const canvasContainer = ctx.parentElement;
   const width = canvasContainer.offsetWidth;
-  const height = 250;
-  
+  const height = canvasContainer.offsetHeight || 250;
+
+  // Let Chart.js handle responsive sizing; keep a sensible fallback.
   ctx.width = width;
   ctx.height = height;
+
+  // Build a soft blue vertical gradient like the mock.
+  const g = ctx.getContext('2d').createLinearGradient(0, 0, 0, height);
+  g.addColorStop(0, 'rgba(59, 130, 246, 0.20)'); // top
+  g.addColorStop(0.65, 'rgba(59, 130, 246, 0.08)');
+  g.addColorStop(1, 'rgba(59, 130, 246, 0.00)'); // bottom
 
   performanceChart = new Chart(ctx, {
     type: 'line',
@@ -44,16 +51,17 @@ function initializePerformanceChart() {
       datasets: [{
         label: 'Accuracy (%)',
         data: chartData.accuracy,
-        borderColor: '#0f1f3d',
-        backgroundColor: 'rgba(59, 130, 246, 0.08)',
-        borderWidth: 3,
+        borderColor: '#2563eb',
+        backgroundColor: g,
+        borderWidth: 4,
         fill: true,
-        pointRadius: 5,
+        pointRadius: 4,
         pointBackgroundColor: '#ffffff',
-        pointBorderColor: '#0f1f3d',
-        pointBorderWidth: 2,
-        pointHoverRadius: 7,
-        tension: 0.4,
+        pointBorderColor: '#2563eb',
+        pointBorderWidth: 2.5,
+        pointHoverRadius: 6,
+        pointHoverBorderWidth: 3,
+        tension: 0.45,
         segment: {
           borderCapStyle: 'round',
         }
@@ -77,9 +85,6 @@ function initializePerformanceChart() {
               return context.parsed.y.toFixed(1) + '%';
             }
           }
-        },
-        filler: {
-          propagate: true
         }
       },
       scales: {
@@ -87,25 +92,29 @@ function initializePerformanceChart() {
           beginAtZero: true,
           max: 100,
           grid: {
-            color: 'rgba(226, 232, 240, 0.5)',
-            drawBorder: false
+            color: 'rgba(226, 232, 240, 0.55)',
+            drawBorder: false,
+            tickLength: 0
           },
           ticks: {
-            color: '#64748b',
-            font: { size: 12, weight: '500' },
-            callback: function(value) {
-              return value + '%';
-            }
+            display: false
           }
         },
         x: {
-          grid: { display: false },
+          grid: {
+            color: 'rgba(226, 232, 240, 0.35)',
+            drawBorder: false
+          },
           ticks: {
-            color: '#64748b',
-            font: { size: 12, weight: '500' }
+            display: false
           }
         }
-      }
+      },
+      elements: {
+        line: { borderJoinStyle: 'round' },
+        point: { hitRadius: 18 }
+      },
+      layout: { padding: { top: 6, right: 8, bottom: 6, left: 8 } }
     }
   });
 }
