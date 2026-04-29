@@ -42,7 +42,7 @@ The following screens represent the web dashboard used to manage the federated l
 --- 
 
 ## 🎥 Project Demo (Prototype)
-> ### https://drive.google.com/file/d/1FnzDWvZ48stuTHCDcvlTtTxwQRiOhNuP/view?usp=sharing 
+> ### https://drive.google.com/file/d/1jD2BK3S4YnW3sPd7OVYYtvSA1av71WrC/view?usp=sharing
 ---
 ## ✅ Completed Components
 
