@@ -42,7 +42,7 @@ The following screens represent the web dashboard used to manage the federated l
 --- 
 
 ## 🎥 Project Demo (Prototype)
-> ### ⏳ Coming Very Soon!
+> ### https://drive.google.com/file/d/1jD2BK3S4YnW3sPd7OVYYtvSA1av71WrC/view?usp=sharing
 ---
 ## ✅ Completed Components
 
@@ -71,10 +71,13 @@ The following screens represent the web dashboard used to manage the federated l
 ---
 
 ## 🚧 Currently Working On
-- **Decentralization**
+- **1- Decentralization**
 - Full decentralization (removing central server/global model)
 - Monitoring network traffic and model size
 - Encrypting model updates before sharing
+
+- **2-Hyper ledger Private Network**
+- Moving from Hardhat open Network to Private permissioned network.
 
 ---
 
@@ -83,7 +86,7 @@ The following screens represent the web dashboard used to manage the federated l
 - Federated Learning (FedAvg)
 - Explainable AI (XAI)
 - IPFS 
-- Private Blcokchain Network legder
+- Private Hyperledger Network
 - Git
 
 ---
