@@ -1,17 +1,36 @@
-node_modules
-.env
+node_modules/
+cache/
+artifacts/
+typechain-types/
+IMPROVEMENTS_EXPLAINED.md
+IPFS_BLOCKCHAIN_INTEGRATION_GUIDE.md
+QUICK_START.md
+requirements.txt
+Blockchain/STEP_BY_STEP_GUIDE.md
 
 # Hardhat files
-/cache
-/artifacts
+coverage/
+coverage.json
 
-# TypeChain files
-/typechain
-/typechain-types
+# Deployment
+deployment_info.json
+.env
+.env.local
 
-# solidity-coverage files
-/coverage
-/coverage.json
 
-# Hardhat Ignition default folder for deployments against a local node
-ignition/deployments/chain-31337
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

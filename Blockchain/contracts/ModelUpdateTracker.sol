@@ -1,178 +1,185 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/**
- * @title ModelUpdateTracker
- * @dev Smart contract for tracking federated learning model updates from hospitals
- * This contract stores model updates, IPFS hashes, and contribution records
- */
 contract ModelUpdateTracker {
-    // Struct to store model update information
-    struct ModelUpdate {
-        address hospitalAddress;
-        uint256 round;
-        string ipfsHash;
-        uint256 timestamp;
-        bool isValid;
-    }
 
-    // Struct to store hospital contribution statistics
-    struct HospitalContribution {
-        address hospitalAddress;
-        uint256 totalContributions;
-        uint256 lastContributionRound;
-        bool isRegistered;
-    }
-
-    // Contract owner
+    // ---------------- ROLES ----------------
     address public owner;
+    address public aggregator; // global model publisher (global node)
 
-    // Mapping from round number to model updates
-    mapping(uint256 => ModelUpdate[]) public roundUpdates;
-
-    // Mapping from hospital address to their contribution stats
-    mapping(address => HospitalContribution) public hospitalContributions;
-
-    // Array of all registered hospitals
-    address[] public registeredHospitals;
-
-    // Current federated learning round
+    // ---------------- CONFIG ----------------
+    uint256 public requiredSubmissions; // min hospitals per round
     uint256 public currentRound;
 
-    // Events
-    event HospitalRegistered(address indexed hospital, uint256 timestamp);
-    event ModelUpdateSubmitted(
-        address indexed hospital,
-        uint256 indexed round,
-        string ipfsHash,
-        uint256 timestamp
-    );
-    event RoundCompleted(uint256 indexed round, uint256 totalUpdates, uint256 timestamp);
+    bool public paused;
 
-    // Modifiers
+    // ---------------- STRUCTS ----------------
+    struct ModelPointer {
+        string cid;        // IPFS CID
+        bytes32 fileHash;  // sha256(model bytes) off-chain
+        uint256 timestamp;
+        address submitter;
+    }
+
+    struct HospitalContribution {
+        bool isRegistered;
+        uint256 totalSubmissions;
+        uint256 lastRound;
+    }
+
+    // ---------------- STORAGE ----------------
+
+    // round => hospital => local model
+    mapping(uint256 => mapping(address => ModelPointer)) private localModels;
+
+    // round => hospitals submitted
+    mapping(uint256 => address[]) private roundHospitals;
+    mapping(uint256 => mapping(address => bool)) public hasSubmitted;
+
+    // round => global model
+    mapping(uint256 => ModelPointer) private globalModels;
+
+    // hospitals
+    mapping(address => HospitalContribution) public hospitalContributions;
+    address[] public registeredHospitals;
+
+    // ---------------- EVENTS ----------------
+    event HospitalRegistered(address hospital);
+    event LocalModelSubmitted(uint256 round, address hospital, string cid);
+    event GlobalModelPublished(uint256 round, string cid);
+    event RoundAdvanced(uint256 newRound);
+
+    // ---------------- MODIFIERS ----------------
     modifier onlyOwner() {
-        require(msg.sender == owner, "Only owner can call this function");
+        require(msg.sender == owner, "Only owner");
         _;
     }
 
-    modifier onlyRegisteredHospital() {
-        require(
-            hospitalContributions[msg.sender].isRegistered,
-            "Hospital not registered"
-        );
+    modifier onlyAggregator() {
+        require(msg.sender == aggregator, "Only aggregator");
         _;
     }
 
-    constructor() {
+    modifier onlyHospital() {
+        require(hospitalContributions[msg.sender].isRegistered, "Not hospital");
+        _;
+    }
+
+    modifier whenNotPaused() {
+        require(!paused, "Paused");
+        _;
+    }
+
+    // ---------------- CONSTRUCTOR ----------------
+    constructor(uint256 _requiredSubmissions) {
         owner = msg.sender;
-        currentRound = 0;
+        aggregator = msg.sender;
+        requiredSubmissions = _requiredSubmissions;
+        currentRound = 1;
     }
 
-    /**
-     * @dev Register a new hospital
-     * @param hospitalAddress Address of the hospital to register
-     */
-    function registerHospital(address hospitalAddress) public onlyOwner {
-        require(
-            !hospitalContributions[hospitalAddress].isRegistered,
-            "Hospital already registered"
-        );
+    // ---------------- ADMIN ----------------
+    function registerHospital(address h) external onlyOwner {
+        require(!hospitalContributions[h].isRegistered, "Already registered");
 
-        hospitalContributions[hospitalAddress] = HospitalContribution({
-            hospitalAddress: hospitalAddress,
-            totalContributions: 0,
-            lastContributionRound: 0,
-            isRegistered: true
+        hospitalContributions[h] = HospitalContribution({
+            isRegistered: true,
+            totalSubmissions: 0,
+            lastRound: 0
         });
 
-        registeredHospitals.push(hospitalAddress);
-        emit HospitalRegistered(hospitalAddress, block.timestamp);
+        registeredHospitals.push(h);
+        emit HospitalRegistered(h);
     }
 
-    /**
-     * @dev Submit a model update for the current round
-     * @param ipfsHash IPFS hash of the model update stored on IPFS (via Pinata)
-     * @param round Round number for this update
-     */
-    function submitModelUpdate(string memory ipfsHash, uint256 round)
-        public
-        onlyRegisteredHospital
-    {
-        require(round <= currentRound + 1, "Round number too high");
-        require(bytes(ipfsHash).length > 0, "IPFS hash cannot be empty");
+    function setAggregator(address a) external onlyOwner {
+        aggregator = a;
+    }
 
-        // Create model update
-        ModelUpdate memory update = ModelUpdate({
-            hospitalAddress: msg.sender,
-            round: round,
-            ipfsHash: ipfsHash,
+    function pause() external onlyOwner {
+        paused = true;
+    }
+
+    function unpause() external onlyOwner {
+        paused = false;
+    }
+
+    // ---------------- HOSPITAL ----------------
+    function submitLocalModel(
+        string calldata cid,
+        bytes32 fileHash
+    )
+        external
+        onlyHospital
+        whenNotPaused
+    {
+        require(!hasSubmitted[currentRound][msg.sender], "Already submitted");
+
+        localModels[currentRound][msg.sender] = ModelPointer({
+            cid: cid,
+            fileHash: fileHash,
             timestamp: block.timestamp,
-            isValid: true
+            submitter: msg.sender
         });
 
-        // Store the update
-        roundUpdates[round].push(update);
+        hasSubmitted[currentRound][msg.sender] = true;
+        roundHospitals[currentRound].push(msg.sender);
 
-        // Update hospital contribution stats
-        HospitalContribution storage contribution = hospitalContributions[msg.sender];
-        contribution.totalContributions++;
-        contribution.lastContributionRound = round;
+        hospitalContributions[msg.sender].totalSubmissions++;
+        hospitalContributions[msg.sender].lastRound = currentRound;
 
-        emit ModelUpdateSubmitted(msg.sender, round, ipfsHash, block.timestamp);
+        emit LocalModelSubmitted(currentRound, msg.sender, cid);
     }
 
-    /**
-     * @dev Get all updates for a specific round
-     * @param round Round number
-     * @return Array of ModelUpdate structs
-     */
-    function getRoundUpdates(uint256 round)
-        public
-        view
-        returns (ModelUpdate[] memory)
+    // ---------------- AGGREGATOR ----------------
+    function publishGlobalModel(
+        string calldata cid,
+        bytes32 fileHash
+    )
+        external
+        onlyAggregator
+        whenNotPaused
     {
-        return roundUpdates[round];
-    }
-
-    /**
-     * @dev Get contribution statistics for a hospital
-     * @param hospitalAddress Address of the hospital
-     * @return HospitalContribution struct
-     */
-    function getHospitalContribution(address hospitalAddress)
-        public
-        view
-        returns (HospitalContribution memory)
-    {
-        return hospitalContributions[hospitalAddress];
-    }
-
-    /**
-     * @dev Get total number of registered hospitals
-     * @return Count of registered hospitals
-     */
-    function getRegisteredHospitalsCount() public view returns (uint256) {
-        return registeredHospitals.length;
-    }
-
-    /**
-     * @dev Advance to the next round (only owner)
-     */
-    function advanceRound() public onlyOwner {
-        currentRound++;
-        emit RoundCompleted(
-            currentRound - 1,
-            roundUpdates[currentRound - 1].length,
-            block.timestamp
+        require(
+            roundHospitals[currentRound].length >= requiredSubmissions,
+            "Not enough hospitals"
         );
+
+        globalModels[currentRound] = ModelPointer({
+            cid: cid,
+            fileHash: fileHash,
+            timestamp: block.timestamp,
+            submitter: msg.sender
+        });
+
+        emit GlobalModelPublished(currentRound, cid);
+
+        currentRound++;
+        emit RoundAdvanced(currentRound);
     }
 
-    /**
-     * @dev Get number of updates in a specific round
-     * @param round Round number
-     * @return Count of updates
-     */
-    function getRoundUpdateCount(uint256 round) public view returns (uint256) {
-        return roundUpdates[round].length;
+    // ---------------- READ ----------------
+    function getLocalModel(uint256 round, address hospital)
+        external
+        view
+        returns (ModelPointer memory)
+    {
+        return localModels[round][hospital];
+    }
+
+    function getGlobalModel(uint256 round)
+        external
+        view
+        returns (ModelPointer memory)
+    {
+        return globalModels[round];
+    }
+
+    function getRoundHospitals(uint256 round)
+        external
+        view
+        returns (address[] memory)
+    {
+        return roundHospitals[round];
     }
 }
